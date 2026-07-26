@@ -59,6 +59,7 @@ namespace warssdk::ucsl {
 #include "cslib/csl/ut/String.h"
 #include "cslib/csl/ut/VariableString.h"
 #include "cslib/csl/ut/Enum.h"
+#include "cslib/csl/ut/Point.h"
 
 #include "cslib/csl/fnd/Singleton.h"
 #include "cslib/csl/fnd/Mutex.h"
@@ -70,6 +71,16 @@ namespace warssdk::ucsl {
 #include "cslib/csl/fnd/PoolHeap.h"
 #include "cslib/csl/fnd/ExternalHeap.h"
 #include "cslib/csl/fnd/Delegate.h"
+
+#include "Gindows/Object.h"
+#include "Gindows/Component.h"
+#include "Gindows/String.h"
+#include "Gindows/Canvas.h"
+#include "Gindows/Screen.h"
+#include "Gindows/Control.h"
+#include "Gindows/ToolTip.h"
+#include "Gindows/Desktop.h"
+#include "Gindows/Manager.h"
 
 #include "Hedgehog/Rsdx/hhMTSimpleJobJoint.h"
 #include "Hedgehog/Rsdx/hhmtjobdispatchfunctions.h"
@@ -395,8 +406,9 @@ namespace warssdk::ucsl {
 #include "Hedgehog/Scene/SceneNode.h"
 #include "Hedgehog/Scene/ObjectInfo.h"
 #include "Hedgehog/Scene/SceneNodeBuilder.h"
-#include "Hedgehog/Scene/SceneAnimation.h"
 #include "Hedgehog/Scene/SceneBuilder.h"
+#include "Hedgehog/Scene/SceneAnimation.h"
+#include "Hedgehog/Scene/ModelAnimation.h"
 #include "Hedgehog/Scene/SceneControl.h"
 #include "Hedgehog/Scene/SceneManager.h"
 

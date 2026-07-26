@@ -9,7 +9,7 @@ namespace hh::scene{
         struct Resource{
             SceneNode* node;
             int resourceType;
-            SceneAnimation* animation;
+            fnd::Reference<SceneAnimation> animation;
         };
 
         struct CameraParameters{
@@ -122,7 +122,7 @@ namespace hh::scene{
         SceneBuilder::ResourceNameResolver* resourceNameResolver;
         hh::fnd::Packfile* scenePac;
         csl::ut::MoveArray<ControlNode> controlNodes;
-        csl::ut::MoveArray<int64_t> unk10;
+        csl::ut::MoveArray<fnd::Handle<game::GameObject>> unk10;
         short unk11;
         char unk13;
         char unk14;
@@ -154,5 +154,6 @@ namespace hh::scene{
         SceneControl(csl::fnd::IAllocator* allocator, const char* sceneName);
 
         Camera* GetCamera(unsigned int idx);
+        void AddAnimation(SceneAnimation* anim, SceneNode* node, int resourceType);
     };
 }

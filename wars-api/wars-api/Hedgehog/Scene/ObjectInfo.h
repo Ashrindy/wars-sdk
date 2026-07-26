@@ -5,8 +5,8 @@ namespace hh::scene{
     public:
         SceneNode* node;
         int64_t unk0;
-        int64_t unk1;
-        int64_t unk2;
+        fnd::Reference<fnd::HFrame> unk1;
+        fnd::Reference<fnd::HFrame> unk2;
         int unk3;
         int unk4;
     };
