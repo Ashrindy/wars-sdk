@@ -71,6 +71,7 @@ namespace warssdk::ucsl {
 #include "cslib/csl/fnd/PoolHeap.h"
 #include "cslib/csl/fnd/ExternalHeap.h"
 #include "cslib/csl/fnd/Delegate.h"
+#include "cslib/csl/fnd/Tick.h"
 
 #include "Gindows/Object.h"
 #include "Gindows/Component.h"
@@ -281,6 +282,7 @@ namespace warssdk::ucsl {
 #include "Hedgehog/Framework/Framework.h"
 #include "Hedgehog/Framework/AppModule.h"
 #include "Hedgehog/Framework/Application.h"
+#include "Hedgehog/Framework/SyncTimer.h"
 
 // HID
 #include "Hedgehog/HID/InputDevice.h"
@@ -331,6 +333,7 @@ namespace warssdk::ucsl {
 #include "Hedgehog/Game/ObjectWorldExtension.h"
 #include "Hedgehog/Game/ObjectWorld.h"
 #include "Hedgehog/Game/FreeCamera.h"
+#include "Hedgehog/Game/TransformManager.h"
 
 #include "Hedgehog/Game/GOComponents/GOCInput.h"
 #include "Hedgehog/Game/GOComponents/GOCTransform.h"
@@ -368,6 +371,7 @@ namespace warssdk::ucsl {
 #include "Hedgehog/Graphics/ResMirageLightField.h"
 #include "Hedgehog/Graphics/ResDecal.h"
 #include "Hedgehog/Graphics/ResProbe.h"
+#include "Hedgehog/Graphics/ModelNodeHFrame.h"
 
 #include "Hedgehog/Effect/ResEffect.h"
 
@@ -402,11 +406,13 @@ namespace warssdk::ucsl {
 #include "Hedgehog/Debug/Messages.h"
 
 #include "Hedgehog/Scene/ResScene.h"
+#include "Hedgehog/Scene/CurveEvaluator.h"
 #include "Hedgehog/Scene/SceneObject.h"
 #include "Hedgehog/Scene/SceneNode.h"
 #include "Hedgehog/Scene/ObjectInfo.h"
 #include "Hedgehog/Scene/SceneNodeBuilder.h"
 #include "Hedgehog/Scene/SceneBuilder.h"
+#include "Hedgehog/Scene/ControlNode.h"
 #include "Hedgehog/Scene/SceneAnimation.h"
 #include "Hedgehog/Scene/ModelAnimation.h"
 #include "Hedgehog/Scene/SceneControl.h"
@@ -494,6 +500,10 @@ namespace warssdk::ucsl {
 
 #include "Application/Camera/CameraBridge.h"
 #include "Application/Camera/CameraService.h"
+
+#include "Application/Scene/GOCScene.h"
+#include "Application/Scene/MySceneBuilder.h"
+#include "Application/Camera/SceneCamera.h"
 
 // #include "Application/VolumeTrigger.h"
 // #include "Application/ObjCamera.h"

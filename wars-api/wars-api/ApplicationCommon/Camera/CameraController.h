@@ -2,14 +2,22 @@
 
 namespace app_cmn::camera {
     class CameraFrame;
-    class CameraController : public hh::fnd::ReferencedObject {
+    class CameraController : public hh::fnd::RefByHandleObject {
     public:
         CameraParameter parameter;
-        CameraFrame* cameraFrame;
-        csl::ut::VariableString name;
-        uint8_t unk2;
+        int64_t qword80; // maybe still camera frame
+        int64_t qword88;
+        char dword90;
 
-        CameraController(csl::fnd::IAllocator* allocator);
+        CameraController();
+
+        virtual const char* GetName() const = 0;
+        virtual bool UnkFunc1() { return false; }
+        virtual bool UnkFunc2() { return false; }
+        virtual void UnkFunc3() {}
+        virtual void UnkFunc4() {}
+        virtual void UnkFunc5() {}
+        virtual void UnkFunc6() {}
 
         void SetCameraFrame(CameraFrame* cameraFrame);
     };

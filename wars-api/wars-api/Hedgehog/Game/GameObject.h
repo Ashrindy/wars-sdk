@@ -2,7 +2,7 @@
 
 #define GAMEOBJECT_CLASS_DECLARATION(ClassName) private:\
 		static const hh::game::GameObjectClass staticGameObjectClass;\
-		static hh::game::GameObject* Create(csl::fnd::IAllocator* allocator);\
+		static hh::game::GameObject* Create();\
 		ClassName();\
 	public:\
 		static const hh::game::GameObjectClass* GetClass();
@@ -41,14 +41,14 @@ namespace hh::game
 
 	class GameObjectClass {
 	public:
-		typedef GameObject* CreateFunction(csl::fnd::IAllocator* allocator);
+		typedef GameObject* CreateFunction();
 
 	private:
 		const char* name{};
 		const char* scopedName{};
 		uint64_t unk12{};
 		size_t objectSize{};
-		GameObject* (*instantiator)(csl::fnd::IAllocator* allocator) {};
+		GameObject* (*instantiator)() {};
 		uint64_t unk15{};
 		uint64_t unk16{};
 		uint64_t unk17{};
@@ -57,7 +57,7 @@ namespace hh::game
 		const hh::fnd::RflClass* spawnerDataRflClass{};
 		GameObject* Create(csl::fnd::IAllocator* pAllocator) const;
 	public:
-		GameObjectClass(const char* name, const char* scopedName, size_t objectSize, GameObject* (*instantiator)(csl::fnd::IAllocator* allocator), uint32_t attributeCount, const GameObjectClassAttribute* attributes, const hh::fnd::RflClass* spawnerDataRflClass)
+		GameObjectClass(const char* name, const char* scopedName, size_t objectSize, GameObject* (*instantiator)(), uint32_t attributeCount, const GameObjectClassAttribute* attributes, const hh::fnd::RflClass* spawnerDataRflClass)
 			: name{ name }, scopedName{ scopedName }, objectSize{ objectSize }, instantiator{ instantiator }, attributeCount{ attributeCount }, attributes{ attributes }, spawnerDataRflClass{ spawnerDataRflClass } {}
 		template<typename T>
 		T* Create(csl::fnd::IAllocator* pAllocator) const { return static_cast<T*>(Create(pAllocator)); }
@@ -109,7 +109,7 @@ namespace hh::game
 		virtual void AddCallback(GameManager* gameManager) {}
 		virtual void RemoveCallback(GameManager* gameManager) {}
 		virtual void Update(fnd::UpdatingPhase phase, const fnd::SUpdateInfo& updateInfo) {}
-		virtual void UnkFunc9() {}
+		virtual void UnkFunc9(void* a2, fnd::UpdatingPhase phase) {}
 		virtual bool ProcessMessage(fnd::Message& message) override;
 		virtual bool ReceiveMessage(fnd::Message& message) override;
 
@@ -230,5 +230,11 @@ namespace hh::game
 		}
 
 		const csl::ut::MoveArray<fnd::Handle<GameObject>>& GetChildren();
+
+		static GameObject* Create(const GameObjectClass* gameObjectClass);
+		template<typename T>
+		static T* Create() {
+			return Create(T::GetClass());
+		}
 	};
 }

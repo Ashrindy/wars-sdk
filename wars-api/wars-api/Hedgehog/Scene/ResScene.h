@@ -3,8 +3,8 @@
 namespace hh::scene{
     class ResScene : public hh::fnd::ManagedResource{
     public:
-        csl::ut::MoveArray<int64_t> unk0;
-        int unk1;
+        csl::ut::MoveArray<fnd::Reference<fnd::ManagedResource>> relatedResources;
+        bool resolved;
 
         virtual void Load(void* data, size_t size) override;
         virtual void Unload() override;

@@ -65,6 +65,11 @@ PUBLIC ?GetRuntimeTypeInfo@ObjectWorld2@game@hh@@UEAAPEAXXZ
     mov rax, 01400ff540h
     jmp rax
 
+PUBLIC ?GetRuntimeTypeInfo@SceneManager@scene@hh@@UEAAPEAXXZ
+?GetRuntimeTypeInfo@SceneManager@scene@hh@@UEAAPEAXXZ:
+    mov rax, 01400ff540h
+    jmp rax
+
 PUBLIC ?Create@SimpleInputHandler@services@heur@@CAPEAV123@XZ
 ?Create@SimpleInputHandler@services@heur@@CAPEAV123@XZ:
     mov rax, 01400ff550h
@@ -152,6 +157,36 @@ PUBLIC ?GetCellCount@Cast3D@SurfRide@@UEBAIXZ
 
 PUBLIC ?GetCell@Cast3D@SurfRide@@UEBAPEAUSRS_CELL3D@2@XZ
 ?GetCell@Cast3D@SurfRide@@UEBAPEAUSRS_CELL3D@2@XZ:
+    mov rax, 0140104a30h
+    jmp rax
+
+PUBLIC ?GetAnimation@SceneNode@scene@hh@@UEAAPEAVSceneAnimationBase@23@I@Z
+?GetAnimation@SceneNode@scene@hh@@UEAAPEAVSceneAnimationBase@23@I@Z:
+    mov rax, 0140104a30h
+    jmp rax
+
+PUBLIC ?UnkFunc13@SceneAnimation@scene@hh@@UEAA_JXZ
+?UnkFunc13@SceneAnimation@scene@hh@@UEAA_JXZ:
+    mov rax, 0140104a30h
+    jmp rax
+
+PUBLIC ?GetResourceNames@SceneAnimation@scene@hh@@UEAAAEAV?$MoveArray@VVariableString@strings@ucsl@@@ut@csl@@XZ
+?GetResourceNames@SceneAnimation@scene@hh@@UEAAAEAV?$MoveArray@VVariableString@strings@ucsl@@@ut@csl@@XZ:
+    mov rax, 0140104a30h
+    jmp rax
+
+PUBLIC ?UnkFunc17@SceneAnimation@scene@hh@@UEAA_JXZ
+?UnkFunc17@SceneAnimation@scene@hh@@UEAA_JXZ:
+    mov rax, 0140104a30h
+    jmp rax
+
+PUBLIC ?GetResourceNames@SceneAnimation@scene@hh@@UEAAPEAV?$MoveArray@VVariableString@strings@ucsl@@@ut@csl@@XZ
+?GetResourceNames@SceneAnimation@scene@hh@@UEAAPEAV?$MoveArray@VVariableString@strings@ucsl@@@ut@csl@@XZ:
+    mov rax, 0140104a30h
+    jmp rax
+
+PUBLIC ?GetResourceNameCount@PropertyAnimation@scene@hh@@UEAAHXZ
+?GetResourceNameCount@PropertyAnimation@scene@hh@@UEAAHXZ:
     mov rax, 0140104a30h
     jmp rax
 
@@ -353,6 +388,21 @@ PUBLIC ?OnRemovedFromGame@CameraService@camera@app@@UEAAXXZ
 PUBLIC ?Create@PlayerPositionProcessor@CameraService@camera@app@@CAPEAV1234@XZ
 ?Create@PlayerPositionProcessor@CameraService@camera@app@@CAPEAV1234@XZ:
     mov rax, 0140125210h
+    jmp rax
+
+PUBLIC ?GetName@SceneCamera@camera@app@@UEBAPEBDXZ
+?GetName@SceneCamera@camera@app@@UEBAPEBDXZ:
+    mov rax, 014012f5c0h
+    jmp rax
+
+PUBLIC ?UnkFunc3@SceneCamera@camera@app@@UEAAXXZ
+?UnkFunc3@SceneCamera@camera@app@@UEAAXXZ:
+    mov rax, 014012f650h
+    jmp rax
+
+PUBLIC ?UnkFunc4@SceneCamera@camera@app@@UEAAXXZ
+?UnkFunc4@SceneCamera@camera@app@@UEAAXXZ:
+    mov rax, 014012f650h
     jmp rax
 
 PUBLIC ?Construct@ObjClassicItemBoxSpawner@rfl@app@@CAXPEAU123@PEAVIAllocator@fnd@csl@@@Z
@@ -2682,6 +2732,11 @@ PUBLIC ?ResizeTbl@?$HashMap@PEBDPEAXVStringMapOperation@ut@csl@@@ut@csl@@IEAAX_K
 
 PUBLIC ?size@?$HashMap@PEBDPEAXVStringMapOperation@ut@csl@@@ut@csl@@QEAA_KXZ
 ?size@?$HashMap@PEBDPEAXVStringMapOperation@ut@csl@@@ut@csl@@QEAA_KXZ:
+    mov rax, 01401b3b40h
+    jmp rax
+
+PUBLIC ?GetNode@ObjectInfoImpl@scene@hh@@UEAAPEAVSceneNode@23@XZ
+?GetNode@ObjectInfoImpl@scene@hh@@UEAAPEAVSceneNode@23@XZ:
     mov rax, 01401b3b40h
     jmp rax
 
@@ -14080,6 +14135,16 @@ PUBLIC ?Create@ObjPopupRing@app@@CAPEAV12@XZ
     mov rax, 014028e9d0h
     jmp rax
 
+PUBLIC ?UnkFunc9@SceneAnimation@scene@hh@@UEAAMH@Z
+?UnkFunc9@SceneAnimation@scene@hh@@UEAAMH@Z:
+    mov rax, 014028f030h
+    jmp rax
+
+PUBLIC ?GetStateDuration@SceneAnimation@scene@hh@@UEAAMH@Z
+?GetStateDuration@SceneAnimation@scene@hh@@UEAAMH@Z:
+    mov rax, 014028f030h
+    jmp rax
+
 PUBLIC ?Create@RingManager@services@heur@@CAPEAV123@XZ
 ?Create@RingManager@services@heur@@CAPEAV123@XZ:
     mov rax, 014028fd60h
@@ -17145,6 +17210,16 @@ PUBLIC ?Create@ObjTreadShadow@player@app@@CAPEAV123@XZ
     mov rax, 0140423740h
     jmp rax
 
+PUBLIC ?UnkFunc6@SceneAnimation@scene@hh@@UEAA_JXZ
+?UnkFunc6@SceneAnimation@scene@hh@@UEAA_JXZ:
+    mov rax, 01404d2540h
+    jmp rax
+
+PUBLIC ?UnkFunc6@SceneAnimation@scene@hh@@UEAA_N_J0@Z
+?UnkFunc6@SceneAnimation@scene@hh@@UEAA_N_J0@Z:
+    mov rax, 01404d2540h
+    jmp rax
+
 PUBLIC ?Create@ObjCubeAttackWave@player@app@@CAPEAV123@XZ
 ?Create@ObjCubeAttackWave@player@app@@CAPEAV123@XZ:
     mov rax, 01404d5570h
@@ -17168,6 +17243,11 @@ PUBLIC ??0ObjVoidAttackBall@player@app@@QEAA@XZ
 PUBLIC ?Create@InfiniteSilhouettePlugin@scene@app@@CAPEAV123@XZ
 ?Create@InfiniteSilhouettePlugin@scene@app@@CAPEAV123@XZ:
     mov rax, 014050e730h
+    jmp rax
+
+PUBLIC ?GetUnk@MySceneBuilder@scene@app@@UEAA_NPEAVSceneControl@2hh@@PEAUResourceTypeInfo@fnd@5@PEBD@Z
+?GetUnk@MySceneBuilder@scene@app@@UEAA_NPEAVSceneControl@2hh@@PEAUResourceTypeInfo@fnd@5@PEBD@Z:
+    mov rax, 014050e920h
     jmp rax
 
 PUBLIC ?Create@MySceneManagerListener@services@heur@@CAPEAV123@XZ
@@ -17230,6 +17310,16 @@ PUBLIC ?Create@SonicDoll@app@@CAPEAV12@XZ
     mov rax, 0140515e00h
     jmp rax
 
+PUBLIC ?GetCategory@GOCScene@scene@app@@UEBAPEBDXZ
+?GetCategory@GOCScene@scene@app@@UEBAPEBDXZ:
+    mov rax, 0140515fc0h
+    jmp rax
+
+PUBLIC ?GetResource@MySceneBuilder@scene@app@@UEAAPEAVManagedResource@fnd@hh@@PEBDPEBUResourceTypeInfo@56@@Z
+?GetResource@MySceneBuilder@scene@app@@UEAAPEAVManagedResource@fnd@hh@@PEBDPEBUResourceTypeInfo@56@@Z:
+    mov rax, 0140516000h
+    jmp rax
+
 PUBLIC ?Create@GOCScene@scene@app@@CAPEAV123@XZ
 ?Create@GOCScene@scene@app@@CAPEAV123@XZ:
     mov rax, 0140516040h
@@ -17238,6 +17328,41 @@ PUBLIC ?Create@GOCScene@scene@app@@CAPEAV123@XZ
 PUBLIC ??0GOCScene@scene@app@@QEAA@XZ
 ??0GOCScene@scene@app@@QEAA@XZ:
     mov rax, 0140516070h
+    jmp rax
+
+PUBLIC ??_DGOCScene@scene@app@@QEAAXXZ
+??_DGOCScene@scene@app@@QEAAXXZ:
+    mov rax, 0140516140h
+    jmp rax
+
+PUBLIC ?Update@GOCScene@scene@app@@UEAAXW4UpdatingPhase@fnd@hh@@AEBUSUpdateInfo@56@@Z
+?Update@GOCScene@scene@app@@UEAAXW4UpdatingPhase@fnd@hh@@AEBUSUpdateInfo@56@@Z:
+    mov rax, 0140516250h
+    jmp rax
+
+PUBLIC ?OnGOCEvent@GOCScene@scene@app@@UEAAXW4GOCEvent@GOComponent@game@hh@@AEAVGameObject@67@PEAX@Z
+?OnGOCEvent@GOCScene@scene@app@@UEAAXW4GOCEvent@GOComponent@game@hh@@AEAVGameObject@67@PEAX@Z:
+    mov rax, 0140516300h
+    jmp rax
+
+PUBLIC ?PreStepCallback@GOCScene@scene@app@@UEAAXPEAVGameManager@game@hh@@AEBUGameStepInfo@56@@Z
+?PreStepCallback@GOCScene@scene@app@@UEAAXPEAVGameManager@game@hh@@AEBUGameStepInfo@56@@Z:
+    mov rax, 0140516570h
+    jmp rax
+
+PUBLIC ?SCL_UnkFunc1@GOCScene@scene@app@@UEAA_J_J@Z
+?SCL_UnkFunc1@GOCScene@scene@app@@UEAA_J_J@Z:
+    mov rax, 0140516630h
+    jmp rax
+
+PUBLIC ?SCL_UnkFunc2@GOCScene@scene@app@@UEAA_J_JPEBDH@Z
+?SCL_UnkFunc2@GOCScene@scene@app@@UEAA_J_JPEBDH@Z:
+    mov rax, 0140516750h
+    jmp rax
+
+PUBLIC ?SCL_UnkFunc0@GOCScene@scene@app@@UEAA_J_J@Z
+?SCL_UnkFunc0@GOCScene@scene@app@@UEAA_J_J@Z:
+    mov rax, 0140516b20h
     jmp rax
 
 PUBLIC ?Create@SosManager@services@heur@@CAPEAV123@XZ
@@ -18940,6 +19065,11 @@ PUBLIC ??_DCameraFrame@camera@app_cmn@@QEAAXXZ
     mov rax, 01405c4d80h
     jmp rax
 
+PUBLIC ??0CameraController@camera@app_cmn@@QEAA@XZ
+??0CameraController@camera@app_cmn@@QEAA@XZ:
+    mov rax, 01405c4dd0h
+    jmp rax
+
 PUBLIC ??0ResRflParameter@fnd@app_cmn@@QEAA@XZ
 ??0ResRflParameter@fnd@app_cmn@@QEAA@XZ:
     mov rax, 01405c50b0h
@@ -19610,9 +19740,369 @@ PUBLIC ??0SceneManager@scene@hh@@QEAA@XZ
     mov rax, 0140617c20h
     jmp rax
 
+PUBLIC ?CreateControl@SceneManager@scene@hh@@QEAAPEAVSceneControl@23@AEBUSceneControlDescription@123@@Z
+?CreateControl@SceneManager@scene@hh@@QEAAPEAVSceneControl@23@AEBUSceneControlDescription@123@@Z:
+    mov rax, 0140617d90h
+    jmp rax
+
+PUBLIC ?OnAddedToGame@SceneManager@scene@hh@@UEAAXXZ
+?OnAddedToGame@SceneManager@scene@hh@@UEAAXXZ:
+    mov rax, 0140618280h
+    jmp rax
+
+PUBLIC ?OnRemovedFromGame@SceneManager@scene@hh@@UEAAXXZ
+?OnRemovedFromGame@SceneManager@scene@hh@@UEAAXXZ:
+    mov rax, 01406182a0h
+    jmp rax
+
+PUBLIC ?FireAddSceneNodeCallback@SceneManager@scene@hh@@QEAAXAEBUAddSceneNodeCallbackInfo@SceneManagerListener@23@H@Z
+?FireAddSceneNodeCallback@SceneManager@scene@hh@@QEAAXAEBUAddSceneNodeCallbackInfo@SceneManagerListener@23@H@Z:
+    mov rax, 0140618320h
+    jmp rax
+
+PUBLIC ?FireAddSceneObjectCallback@SceneManager@scene@hh@@QEAAXAEBUAddSceneObjectCallbackInfo@SceneManagerListener@23@@Z
+?FireAddSceneObjectCallback@SceneManager@scene@hh@@QEAAXAEBUAddSceneObjectCallbackInfo@SceneManagerListener@23@@Z:
+    mov rax, 01406183a0h
+    jmp rax
+
+PUBLIC ?FireCreateExternalObject@SceneManager@scene@hh@@QEAAPEAVSceneObject@23@AEBUCreateExternalObjectInfo@SceneManagerListener@23@@Z
+?FireCreateExternalObject@SceneManager@scene@hh@@QEAAPEAVSceneObject@23@AEBUCreateExternalObjectInfo@SceneManagerListener@23@@Z:
+    mov rax, 01406184f0h
+    jmp rax
+
 PUBLIC ?Create@SceneManager@scene@hh@@CAPEAV123@XZ
 ?Create@SceneManager@scene@hh@@CAPEAV123@XZ:
     mov rax, 0140618b40h
+    jmp rax
+
+PUBLIC ??_DSceneManager@scene@hh@@QEAAXXZ
+??_DSceneManager@scene@hh@@QEAAXXZ:
+    mov rax, 0140618b80h
+    jmp rax
+
+PUBLIC ?GetTypeInfo@ResScene@scene@hh@@SAPEBUResourceTypeInfo@fnd@3@XZ
+?GetTypeInfo@ResScene@scene@hh@@SAPEBUResourceTypeInfo@fnd@3@XZ:
+    mov rax, 014061a3b0h
+    jmp rax
+
+PUBLIC ??0ResScene@scene@hh@@AEAA@XZ
+??0ResScene@scene@hh@@AEAA@XZ:
+    mov rax, 014061a3c0h
+    jmp rax
+
+PUBLIC ?Load@ResScene@scene@hh@@UEAAXPEAX_K@Z
+?Load@ResScene@scene@hh@@UEAAXPEAX_K@Z:
+    mov rax, 014061a5e0h
+    jmp rax
+
+PUBLIC ?Resolve@ResScene@scene@hh@@UEAAXAEAVResourceResolver@fnd@3@@Z
+?Resolve@ResScene@scene@hh@@UEAAXAEAVResourceResolver@fnd@3@@Z:
+    mov rax, 014061a860h
+    jmp rax
+
+PUBLIC ?Create@ResScene@scene@hh@@CAPEAV123@PEAVIAllocator@fnd@csl@@0_K@Z
+?Create@ResScene@scene@hh@@CAPEAV123@PEAVIAllocator@fnd@csl@@0_K@Z:
+    mov rax, 014061aa70h
+    jmp rax
+
+PUBLIC ??0SceneControlDescription@SceneManager@scene@hh@@QEAA@XZ
+??0SceneControlDescription@SceneManager@scene@hh@@QEAA@XZ:
+    mov rax, 014061aaf0h
+    jmp rax
+
+PUBLIC ??0SceneControl@scene@hh@@QEAA@PEAVIAllocator@fnd@csl@@PEBD@Z
+??0SceneControl@scene@hh@@QEAA@PEAVIAllocator@fnd@csl@@PEBD@Z:
+    mov rax, 014061ab40h
+    jmp rax
+
+PUBLIC ?GetResource@SceneControl@scene@hh@@QEBAPEAVResScene@23@XZ
+?GetResource@SceneControl@scene@hh@@QEBAPEAVResScene@23@XZ:
+    mov rax, 014061b250h
+    jmp rax
+
+PUBLIC ?GetControlNode@SceneControl@scene@hh@@QEBAPEAUControlNode@123@PEBD0@Z
+?GetControlNode@SceneControl@scene@hh@@QEBAPEAUControlNode@123@PEBD0@Z:
+    mov rax, 014061b490h
+    jmp rax
+
+PUBLIC ?GetControlNode@SceneControl@scene@hh@@QEBAPEAUControlNode@23@PEBD0@Z
+?GetControlNode@SceneControl@scene@hh@@QEBAPEAUControlNode@23@PEBD0@Z:
+    mov rax, 014061b490h
+    jmp rax
+
+PUBLIC ?GetControlNodeIndex@SceneControl@scene@hh@@QEBAHPEBD0@Z
+?GetControlNodeIndex@SceneControl@scene@hh@@QEBAHPEBD0@Z:
+    mov rax, 014061b540h
+    jmp rax
+
+PUBLIC ?SetTransform@SceneControl@scene@hh@@QEAAXAEBVTransform@math@csl@@@Z
+?SetTransform@SceneControl@scene@hh@@QEAAXAEBVTransform@math@csl@@@Z:
+    mov rax, 014061b600h
+    jmp rax
+
+PUBLIC ?GetCamera@SceneControl@scene@hh@@QEAAPEAUCamera@123@I@Z
+?GetCamera@SceneControl@scene@hh@@QEAAPEAUCamera@123@I@Z:
+    mov rax, 014061b6f0h
+    jmp rax
+
+PUBLIC ?SetScenePac@SceneControl@scene@hh@@QEAAXPEAVPackfile@fnd@3@@Z
+?SetScenePac@SceneControl@scene@hh@@QEAAXPEAVPackfile@fnd@3@@Z:
+    mov rax, 014061b930h
+    jmp rax
+
+PUBLIC ?SNB_UnkFunc1@SceneControl@scene@hh@@UEAA_J_J0@Z
+?SNB_UnkFunc1@SceneControl@scene@hh@@UEAA_J_J0@Z:
+    mov rax, 014061c8c0h
+    jmp rax
+
+PUBLIC ?SNB_UnkFunc1@SceneControl@scene@hh@@UEAA_JPEAV123@PEBD@Z
+?SNB_UnkFunc1@SceneControl@scene@hh@@UEAA_JPEAV123@PEBD@Z:
+    mov rax, 014061c8c0h
+    jmp rax
+
+PUBLIC ?SetPlaybackSpeed@SceneControl@scene@hh@@QEAAXM@Z
+?SetPlaybackSpeed@SceneControl@scene@hh@@QEAAXM@Z:
+    mov rax, 014061d130h
+    jmp rax
+
+PUBLIC ?GameObjectAddedCallback@SceneControl@scene@hh@@UEAAXPEAVGameManager@game@3@PEAVGameObject@53@@Z
+?GameObjectAddedCallback@SceneControl@scene@hh@@UEAAXPEAVGameManager@game@3@PEAVGameObject@53@@Z:
+    mov rax, 014061def0h
+    jmp rax
+
+PUBLIC ?GetObjectInfoImpl@SceneControl@scene@hh@@QEBAPEAVObjectInfoImpl@23@W4ResourceType@SceneNode@v106@2resources@ucsl@@PEBD@Z
+?GetObjectInfoImpl@SceneControl@scene@hh@@QEBAPEAVObjectInfoImpl@23@W4ResourceType@SceneNode@v106@2resources@ucsl@@PEBD@Z:
+    mov rax, 014061f760h
+    jmp rax
+
+PUBLIC ?ParseControlNodes@SceneControl@scene@hh@@QEAAXPEAUSceneData@v106@2resources@ucsl@@@Z
+?ParseControlNodes@SceneControl@scene@hh@@QEAAXPEAUSceneData@v106@2resources@ucsl@@@Z:
+    mov rax, 014061f900h
+    jmp rax
+
+PUBLIC ?FireUpdateControlNodesCallback@SceneControl@scene@hh@@QEAAXXZ
+?FireUpdateControlNodesCallback@SceneControl@scene@hh@@QEAAXXZ:
+    mov rax, 014061faa0h
+    jmp rax
+
+PUBLIC ??_DSceneControl@scene@hh@@QEAAXXZ
+??_DSceneControl@scene@hh@@QEAAXXZ:
+    mov rax, 0140620370h
+    jmp rax
+
+PUBLIC ?GetUnk@ObjectInfoImpl@scene@hh@@UEAAHXZ
+?GetUnk@ObjectInfoImpl@scene@hh@@UEAAHXZ:
+    mov rax, 0140620720h
+    jmp rax
+
+PUBLIC ?GetIndex@ObjectInfoImpl@scene@hh@@UEAAIXZ
+?GetIndex@ObjectInfoImpl@scene@hh@@UEAAIXZ:
+    mov rax, 0140620720h
+    jmp rax
+
+PUBLIC ?SetUnk@ObjectInfoImpl@scene@hh@@UEAA_JH@Z
+?SetUnk@ObjectInfoImpl@scene@hh@@UEAA_JH@Z:
+    mov rax, 0140620790h
+    jmp rax
+
+PUBLIC ?SetIndex@ObjectInfoImpl@scene@hh@@UEAAXI@Z
+?SetIndex@ObjectInfoImpl@scene@hh@@UEAAXI@Z:
+    mov rax, 0140620790h
+    jmp rax
+
+PUBLIC ?UnkFunc1@ObjectInfoImpl@scene@hh@@UEAA_J_J0@Z
+?UnkFunc1@ObjectInfoImpl@scene@hh@@UEAA_J_J0@Z:
+    mov rax, 01406207a0h
+    jmp rax
+
+PUBLIC ?GetTypeInfoByType@scene@hh@@YAPEAUResourceTypeInfo@fnd@2@W4ResourceType@SceneNode@v106@1resources@ucsl@@@Z
+?GetTypeInfoByType@scene@hh@@YAPEAUResourceTypeInfo@fnd@2@W4ResourceType@SceneNode@v106@1resources@ucsl@@@Z:
+    mov rax, 0140620a20h
+    jmp rax
+
+PUBLIC ?IsResourceModel@scene@hh@@YA_NW4ResourceType@SceneNode@v106@1resources@ucsl@@@Z
+?IsResourceModel@scene@hh@@YA_NW4ResourceType@SceneNode@v106@1resources@ucsl@@@Z:
+    mov rax, 0140620ac0h
+    jmp rax
+
+PUBLIC ?GetValueAsFloat@ValueSet@ControlNode@SceneControl@scene@hh@@QEBAMXZ
+?GetValueAsFloat@ValueSet@ControlNode@SceneControl@scene@hh@@QEBAMXZ:
+    mov rax, 0140620cc0h
+    jmp rax
+
+PUBLIC ?GetValueAsFloat@ValueSet@ControlNode@scene@hh@@QEBAMXZ
+?GetValueAsFloat@ValueSet@ControlNode@scene@hh@@QEBAMXZ:
+    mov rax, 0140620cc0h
+    jmp rax
+
+PUBLIC ?GetValueAsString@ValueSet@ControlNode@SceneControl@scene@hh@@QEBAPEBDXZ
+?GetValueAsString@ValueSet@ControlNode@SceneControl@scene@hh@@QEBAPEBDXZ:
+    mov rax, 0140620d50h
+    jmp rax
+
+PUBLIC ?GetValueAsString@ValueSet@ControlNode@scene@hh@@QEBAPEBDXZ
+?GetValueAsString@ValueSet@ControlNode@scene@hh@@QEBAPEBDXZ:
+    mov rax, 0140620d50h
+    jmp rax
+
+PUBLIC ?GetSceneNode@scene@hh@@YAPEAUSceneNode@v106@1resources@ucsl@@PEAUSceneData@4156@PEBDW4ResourceType@34156@@Z
+?GetSceneNode@scene@hh@@YAPEAUSceneNode@v106@1resources@ucsl@@PEAUSceneData@4156@PEBDW4ResourceType@34156@@Z:
+    mov rax, 0140620f20h
+    jmp rax
+
+PUBLIC ?GetSceneNodeTransform@scene@hh@@YAXPEAUSceneData@v106@1resources@ucsl@@AEAVTransform@math@csl@@I@Z
+?GetSceneNodeTransform@scene@hh@@YAXPEAUSceneData@v106@1resources@ucsl@@AEAVTransform@math@csl@@I@Z:
+    mov rax, 0140621550h
+    jmp rax
+
+PUBLIC ?CreateNull@SceneBuilder@scene@hh@@UEAA_NPEAVSceneControl@23@AEBUCreateDescription@123@@Z
+?CreateNull@SceneBuilder@scene@hh@@UEAA_NPEAVSceneControl@23@AEBUCreateDescription@123@@Z:
+    mov rax, 0140628520h
+    jmp rax
+
+PUBLIC ?CreateTerrainModel@SceneBuilder@scene@hh@@UEAA_NPEAVSceneControl@23@AEBUCreateDescription@123@@Z
+?CreateTerrainModel@SceneBuilder@scene@hh@@UEAA_NPEAVSceneControl@23@AEBUCreateDescription@123@@Z:
+    mov rax, 01406286a0h
+    jmp rax
+
+PUBLIC ??0PlayInfo@SceneControl@scene@hh@@QEAA@PEAV123@PEAVIAllocator@fnd@csl@@@Z
+??0PlayInfo@SceneControl@scene@hh@@QEAA@PEAV123@PEAVIAllocator@fnd@csl@@@Z:
+    mov rax, 0140629570h
+    jmp rax
+
+PUBLIC ?Skip@PlayInfo@SceneControl@scene@hh@@QEAAXM@Z
+?Skip@PlayInfo@SceneControl@scene@hh@@QEAAXM@Z:
+    mov rax, 0140629b30h
+    jmp rax
+
+PUBLIC ?SetPlaybackSpeed@PlayInfo@SceneControl@scene@hh@@QEAAXM@Z
+?SetPlaybackSpeed@PlayInfo@SceneControl@scene@hh@@QEAAXM@Z:
+    mov rax, 0140629bb0h
+    jmp rax
+
+PUBLIC ?ResetTime@PlayInfo@SceneControl@scene@hh@@QEAAXXZ
+?ResetTime@PlayInfo@SceneControl@scene@hh@@QEAAXXZ:
+    mov rax, 0140629cc0h
+    jmp rax
+
+PUBLIC ??0CameraParameters@SceneControl@scene@hh@@QEAA@XZ
+??0CameraParameters@SceneControl@scene@hh@@QEAA@XZ:
+    mov rax, 0140629d50h
+    jmp rax
+
+PUBLIC ?CreateAndSetupSceneAnimation@scene@hh@@YAPEAVSceneAnimation@12@AEAUSceneAnimationDescription@12@@Z
+?CreateAndSetupSceneAnimation@scene@hh@@YAPEAVSceneAnimation@12@AEAUSceneAnimationDescription@12@@Z:
+    mov rax, 014062c9d0h
+    jmp rax
+
+PUBLIC ?CreateAndSetup@PropertyAnimation@scene@hh@@SAPEAV123@AEBUDescription@123@@Z
+?CreateAndSetup@PropertyAnimation@scene@hh@@SAPEAV123@AEBUDescription@123@@Z:
+    mov rax, 014062ca80h
+    jmp rax
+
+PUBLIC ?CreateAndSetup@SkeletalModelAnimationAnimator@scene@hh@@SAPEAVSceneAnimation@23@AEAUSceneAnimationDescription@23@@Z
+?CreateAndSetup@SkeletalModelAnimationAnimator@scene@hh@@SAPEAVSceneAnimation@23@AEAUSceneAnimationDescription@23@@Z:
+    mov rax, 014062d070h
+    jmp rax
+
+PUBLIC ??0PropertyAnimation@scene@hh@@QEAA@AEBUDescription@012@@Z
+??0PropertyAnimation@scene@hh@@QEAA@AEBUDescription@012@@Z:
+    mov rax, 014062de40h
+    jmp rax
+
+PUBLIC ??0SceneAnimationBase@scene@hh@@QEAA@HPEAVVariableString@strings@ucsl@@HPEAVSceneControl@12@PEAVIAllocator@fnd@csl@@@Z
+??0SceneAnimationBase@scene@hh@@QEAA@HPEAVVariableString@strings@ucsl@@HPEAVSceneControl@12@PEAVIAllocator@fnd@csl@@@Z:
+    mov rax, 014062df10h
+    jmp rax
+
+PUBLIC ??0SkeletalModelAnimationAnimator@scene@hh@@QEAA@AEAUSceneAnimationDescription@12@@Z
+??0SkeletalModelAnimationAnimator@scene@hh@@QEAA@AEAUSceneAnimationDescription@12@@Z:
+    mov rax, 014062dfe0h
+    jmp rax
+
+PUBLIC ?UnkFunc16@PropertyAnimation@scene@hh@@UEAAXXZ
+?UnkFunc16@PropertyAnimation@scene@hh@@UEAAXXZ:
+    mov rax, 014062f140h
+    jmp rax
+
+PUBLIC ?UnkFunc16@PropertyAnimation@scene@hh@@UEAAX_JPEAUTimelineNode@v106@2resources@ucsl@@@Z
+?UnkFunc16@PropertyAnimation@scene@hh@@UEAAX_JPEAUTimelineNode@v106@2resources@ucsl@@@Z:
+    mov rax, 014062f140h
+    jmp rax
+
+PUBLIC ?UnkFunc16@SceneAnimationBase@scene@hh@@UEAAXXZ
+?UnkFunc16@SceneAnimationBase@scene@hh@@UEAAXXZ:
+    mov rax, 014062f2f0h
+    jmp rax
+
+PUBLIC ?UnkFunc16@SceneAnimationBase@scene@hh@@UEAAX_JPEAUTimelineNode@v106@2resources@ucsl@@@Z
+?UnkFunc16@SceneAnimationBase@scene@hh@@UEAAX_JPEAUTimelineNode@v106@2resources@ucsl@@@Z:
+    mov rax, 014062f2f0h
+    jmp rax
+
+PUBLIC ?UnkFunc9@SceneAnimationBase@scene@hh@@UEAAMH@Z
+?UnkFunc9@SceneAnimationBase@scene@hh@@UEAAMH@Z:
+    mov rax, 0140630430h
+    jmp rax
+
+PUBLIC ?GetStateDuration@SceneAnimationBase@scene@hh@@UEAAMH@Z
+?GetStateDuration@SceneAnimationBase@scene@hh@@UEAAMH@Z:
+    mov rax, 0140630430h
+    jmp rax
+
+PUBLIC ?GetResourceNameCount@SceneAnimationBase@scene@hh@@UEAAHXZ
+?GetResourceNameCount@SceneAnimationBase@scene@hh@@UEAAHXZ:
+    mov rax, 0140630540h
+    jmp rax
+
+PUBLIC ?GetResourceNameIdx@SceneAnimation@scene@hh@@UEAA_JPEBD@Z
+?GetResourceNameIdx@SceneAnimation@scene@hh@@UEAA_JPEBD@Z:
+    mov rax, 0140630600h
+    jmp rax
+
+PUBLIC ?GetResourceNameIdx@SceneAnimationBase@scene@hh@@UEAA_JPEBD@Z
+?GetResourceNameIdx@SceneAnimationBase@scene@hh@@UEAA_JPEBD@Z:
+    mov rax, 0140630610h
+    jmp rax
+
+PUBLIC ?UnkFunc11@SkeletalModelAnimationAnimator@scene@hh@@UEAAXXZ
+?UnkFunc11@SkeletalModelAnimationAnimator@scene@hh@@UEAAXXZ:
+    mov rax, 0140630810h
+    jmp rax
+
+PUBLIC ?UnkFunc10@PropertyAnimation@scene@hh@@UEAAXXZ
+?UnkFunc10@PropertyAnimation@scene@hh@@UEAAXXZ:
+    mov rax, 0140630af0h
+    jmp rax
+
+PUBLIC ?UnkFunc4@SkeletalModelAnimationAnimator@scene@hh@@UEAA_NMH@Z
+?UnkFunc4@SkeletalModelAnimationAnimator@scene@hh@@UEAA_NMH@Z:
+    mov rax, 0140631420h
+    jmp rax
+
+PUBLIC ?SetSpeed@SkeletalModelAnimationAnimator@scene@hh@@UEAA_NM@Z
+?SetSpeed@SkeletalModelAnimationAnimator@scene@hh@@UEAA_NM@Z:
+    mov rax, 0140631730h
+    jmp rax
+
+PUBLIC ?Setup@SkeletalModelAnimationAnimator@scene@hh@@QEAA_NAEAUSceneAnimationDescription@23@@Z
+?Setup@SkeletalModelAnimationAnimator@scene@hh@@QEAA_NAEAUSceneAnimationDescription@23@@Z:
+    mov rax, 0140632880h
+    jmp rax
+
+PUBLIC ?UnkFunc6@PropertyAnimation@scene@hh@@UEAA_N_J0@Z
+?UnkFunc6@PropertyAnimation@scene@hh@@UEAA_N_J0@Z:
+    mov rax, 0140632d50h
+    jmp rax
+
+PUBLIC ?UnkFunc1@SkeletalModelAnimationAnimator@scene@hh@@UEAAPEAVVariableString@strings@ucsl@@XZ
+?UnkFunc1@SkeletalModelAnimationAnimator@scene@hh@@UEAAPEAVVariableString@strings@ucsl@@XZ:
+    mov rax, 0140633520h
+    jmp rax
+
+PUBLIC ?GetClass@NullSceneObject@scene@hh@@SAPEBVGameObjectClass@game@3@XZ
+?GetClass@NullSceneObject@scene@hh@@SAPEBVGameObjectClass@game@3@XZ:
+    mov rax, 0140633a00h
     jmp rax
 
 PUBLIC ??0NullSceneObject@scene@hh@@QEAA@XZ
@@ -19620,9 +20110,114 @@ PUBLIC ??0NullSceneObject@scene@hh@@QEAA@XZ
     mov rax, 0140633a10h
     jmp rax
 
+PUBLIC ??0NullSceneObject@scene@hh@@AEAA@XZ
+??0NullSceneObject@scene@hh@@AEAA@XZ:
+    mov rax, 0140633a10h
+    jmp rax
+
+PUBLIC ?Setup@NullSceneObject@scene@hh@@QEAAXAEBUDescription@123@@Z
+?Setup@NullSceneObject@scene@hh@@QEAAXAEBUDescription@123@@Z:
+    mov rax, 0140633a80h
+    jmp rax
+
+PUBLIC ?AddCallback@NullSceneObject@scene@hh@@UEAAXPEAVGameManager@game@3@@Z
+?AddCallback@NullSceneObject@scene@hh@@UEAAXPEAVGameManager@game@3@@Z:
+    mov rax, 0140633b00h
+    jmp rax
+
+PUBLIC ?GetClass@ModelSceneObject@scene@hh@@SAPEBVGameObjectClass@game@3@XZ
+?GetClass@ModelSceneObject@scene@hh@@SAPEBVGameObjectClass@game@3@XZ:
+    mov rax, 0140633bc0h
+    jmp rax
+
 PUBLIC ??0ModelSceneObject@scene@hh@@QEAA@XZ
 ??0ModelSceneObject@scene@hh@@QEAA@XZ:
     mov rax, 0140633bd0h
+    jmp rax
+
+PUBLIC ??0ModelSceneObject@scene@hh@@AEAA@XZ
+??0ModelSceneObject@scene@hh@@AEAA@XZ:
+    mov rax, 0140633bd0h
+    jmp rax
+
+PUBLIC ?Setup@ModelSceneObject@scene@hh@@QEAA_NAEBUDescription@123@@Z
+?Setup@ModelSceneObject@scene@hh@@QEAA_NAEBUDescription@123@@Z:
+    mov rax, 0140633c80h
+    jmp rax
+
+PUBLIC ?UnkFunc9@ModelSceneObject@scene@hh@@UEAAXPEAXW4UpdatingPhase@fnd@3@@Z
+?UnkFunc9@ModelSceneObject@scene@hh@@UEAAXPEAXW4UpdatingPhase@fnd@3@@Z:
+    mov rax, 0140633d30h
+    jmp rax
+
+PUBLIC ?GetClass@EffectSceneObject@scene@hh@@SAPEBVGameObjectClass@game@3@XZ
+?GetClass@EffectSceneObject@scene@hh@@SAPEBVGameObjectClass@game@3@XZ:
+    mov rax, 01406340d0h
+    jmp rax
+
+PUBLIC ?Setup@EffectSceneObject@scene@hh@@QEAA_NAEBUDescription@123@@Z
+?Setup@EffectSceneObject@scene@hh@@QEAA_NAEBUDescription@123@@Z:
+    mov rax, 0140634130h
+    jmp rax
+
+PUBLIC ??0SceneNode@scene@hh@@QEAA@PEAVSceneObject@12@AEAVVariableString@strings@ucsl@@H_N@Z
+??0SceneNode@scene@hh@@QEAA@PEAVSceneObject@12@AEAVVariableString@strings@ucsl@@H_N@Z:
+    mov rax, 0140634240h
+    jmp rax
+
+PUBLIC ?Destroy@SceneNode@scene@hh@@UEAAXXZ
+?Destroy@SceneNode@scene@hh@@UEAAXXZ:
+    mov rax, 0140634310h
+    jmp rax
+
+PUBLIC ??0ModelSceneNode@scene@hh@@QEAA@PEAVSceneObject@12@AEAVVariableString@strings@ucsl@@_N@Z
+??0ModelSceneNode@scene@hh@@QEAA@PEAVSceneObject@12@AEAVVariableString@strings@ucsl@@_N@Z:
+    mov rax, 0140634370h
+    jmp rax
+
+PUBLIC ?SetTransform@ModelSceneObject@scene@hh@@QEAAXAEBVTransform@math@csl@@_JPEAVIAllocator@fnd@6@H@Z
+?SetTransform@ModelSceneObject@scene@hh@@QEAAXAEBVTransform@math@csl@@_JPEAVIAllocator@fnd@6@H@Z:
+    mov rax, 0140634670h
+    jmp rax
+
+PUBLIC ??0TerrainSceneNode@scene@hh@@QEAA@PEAVSceneObject@12@_JAEAVVariableString@strings@ucsl@@@Z
+??0TerrainSceneNode@scene@hh@@QEAA@PEAVSceneObject@12@_JAEAVVariableString@strings@ucsl@@@Z:
+    mov rax, 0140634780h
+    jmp rax
+
+PUBLIC ?SetTransform@TerrainSceneNode@scene@hh@@UEAAXAEBVTransform@math@csl@@@Z
+?SetTransform@TerrainSceneNode@scene@hh@@UEAAXAEBVTransform@math@csl@@@Z:
+    mov rax, 0140634830h
+    jmp rax
+
+PUBLIC ?GetHFrame@TerrainSceneNode@scene@hh@@UEAAPEAVHFrame@fnd@3@XZ
+?GetHFrame@TerrainSceneNode@scene@hh@@UEAAPEAVHFrame@fnd@3@XZ:
+    mov rax, 0140634840h
+    jmp rax
+
+PUBLIC ??0NullSceneNode@scene@hh@@QEAA@PEAVSceneObject@12@AEAVVariableString@strings@ucsl@@@Z
+??0NullSceneNode@scene@hh@@QEAA@PEAVSceneObject@12@AEAVVariableString@strings@ucsl@@@Z:
+    mov rax, 0140634860h
+    jmp rax
+
+PUBLIC ?Destroy@NullSceneNode@scene@hh@@UEAAXXZ
+?Destroy@NullSceneNode@scene@hh@@UEAAXXZ:
+    mov rax, 01406348f0h
+    jmp rax
+
+PUBLIC ?SetTransform@NullSceneNode@scene@hh@@UEAAXAEBVTransform@math@csl@@@Z
+?SetTransform@NullSceneNode@scene@hh@@UEAAXAEBVTransform@math@csl@@@Z:
+    mov rax, 0140634910h
+    jmp rax
+
+PUBLIC ??0EffectSceneNode@scene@hh@@QEAA@PEAVSceneObject@12@AEAVVariableString@strings@ucsl@@1AEBVTransform@math@csl@@@Z
+??0EffectSceneNode@scene@hh@@QEAA@PEAVSceneObject@12@AEAVVariableString@strings@ucsl@@1AEBVTransform@math@csl@@@Z:
+    mov rax, 0140634990h
+    jmp rax
+
+PUBLIC ?SetTransform@LightSceneNode@scene@hh@@UEAAXAEBVTransform@math@csl@@@Z
+?SetTransform@LightSceneNode@scene@hh@@UEAAXAEBVTransform@math@csl@@@Z:
+    mov rax, 0140634d00h
     jmp rax
 
 PUBLIC ?Create@NullSceneObject@scene@hh@@CAPEAV123@XZ
@@ -19630,8 +20225,18 @@ PUBLIC ?Create@NullSceneObject@scene@hh@@CAPEAV123@XZ
     mov rax, 0140634d20h
     jmp rax
 
+PUBLIC ?Create@NullSceneObject@scene@hh@@CAPEAVGameObject@game@3@PEAVIAllocator@fnd@csl@@@Z
+?Create@NullSceneObject@scene@hh@@CAPEAVGameObject@game@3@PEAVIAllocator@fnd@csl@@@Z:
+    mov rax, 0140634d20h
+    jmp rax
+
 PUBLIC ?Create@ModelSceneObject@scene@hh@@CAPEAV123@XZ
 ?Create@ModelSceneObject@scene@hh@@CAPEAV123@XZ:
+    mov rax, 0140634d50h
+    jmp rax
+
+PUBLIC ?Create@ModelSceneObject@scene@hh@@CAPEAVGameObject@game@3@XZ
+?Create@ModelSceneObject@scene@hh@@CAPEAVGameObject@game@3@XZ:
     mov rax, 0140634d50h
     jmp rax
 
@@ -19643,6 +20248,56 @@ PUBLIC ??0EffectSceneObject@scene@hh@@QEAA@XZ
 PUBLIC ?Create@EffectSceneObject@scene@hh@@CAPEAV123@XZ
 ?Create@EffectSceneObject@scene@hh@@CAPEAV123@XZ:
     mov rax, 0140634d80h
+    jmp rax
+
+PUBLIC ??_DEffectSceneObject@scene@hh@@QEAAXXZ
+??_DEffectSceneObject@scene@hh@@QEAAXXZ:
+    mov rax, 0140634f30h
+    jmp rax
+
+PUBLIC ??_DModelSceneObject@scene@hh@@QEAAXXZ
+??_DModelSceneObject@scene@hh@@QEAAXXZ:
+    mov rax, 0140635000h
+    jmp rax
+
+PUBLIC ??_DNullSceneObject@scene@hh@@QEAAXXZ
+??_DNullSceneObject@scene@hh@@QEAAXXZ:
+    mov rax, 0140635050h
+    jmp rax
+
+PUBLIC ?GetAnimation@ModelSceneNode@scene@hh@@UEAAPEAVSceneAnimationBase@23@I@Z
+?GetAnimation@ModelSceneNode@scene@hh@@UEAAPEAVSceneAnimationBase@23@I@Z:
+    mov rax, 0140635290h
+    jmp rax
+
+PUBLIC ?UnkFunc3@ModelSceneNode@scene@hh@@UEAADXZ
+?UnkFunc3@ModelSceneNode@scene@hh@@UEAADXZ:
+    mov rax, 01406352a0h
+    jmp rax
+
+PUBLIC ?HasAnimations@ModelSceneNode@scene@hh@@UEAA_NXZ
+?HasAnimations@ModelSceneNode@scene@hh@@UEAA_NXZ:
+    mov rax, 01406352a0h
+    jmp rax
+
+PUBLIC ??0HermiteCurveEvaluator@scene@hh@@QEAA@XZ
+??0HermiteCurveEvaluator@scene@hh@@QEAA@XZ:
+    mov rax, 0140642f00h
+    jmp rax
+
+PUBLIC ?Calculate@HermiteCurveEvaluator@scene@hh@@UEAAMM@Z
+?Calculate@HermiteCurveEvaluator@scene@hh@@UEAAMM@Z:
+    mov rax, 0140642f50h
+    jmp rax
+
+PUBLIC ??0LinearCurveEvaluator@scene@hh@@QEAA@XZ
+??0LinearCurveEvaluator@scene@hh@@QEAA@XZ:
+    mov rax, 0140643320h
+    jmp rax
+
+PUBLIC ?Calculate@LinearCurveEvaluator@scene@hh@@UEAAMM@Z
+?Calculate@LinearCurveEvaluator@scene@hh@@UEAAMM@Z:
+    mov rax, 0140643370h
     jmp rax
 
 PUBLIC ??0GOCCollider@physics@hh@@QEAA@XZ
@@ -20090,9 +20745,29 @@ PUBLIC ?GetRuntimeTypeInfo@?$PoolHeapTemplate@VDummyLock@fnd@csl@@@fnd@csl@@UEBA
     mov rax, 0140660830h
     jmp rax
 
+PUBLIC ?GetClass@GOCVisualModel@gfx@hh@@SAPEBVGOComponentClass@game@3@XZ
+?GetClass@GOCVisualModel@gfx@hh@@SAPEBVGOComponentClass@game@3@XZ:
+    mov rax, 0140665790h
+    jmp rax
+
+PUBLIC ??0GOCVisualModelDescription@gfx@hh@@QEAA@XZ
+??0GOCVisualModelDescription@gfx@hh@@QEAA@XZ:
+    mov rax, 01406657a0h
+    jmp rax
+
 PUBLIC ??0GOCVisualModel@gfx@hh@@QEAA@XZ
 ??0GOCVisualModel@gfx@hh@@QEAA@XZ:
     mov rax, 0140665800h
+    jmp rax
+
+PUBLIC ?Setup@GOCVisualModel@gfx@hh@@QEAAXAEBUGOCVisualModelDescription@23@@Z
+?Setup@GOCVisualModel@gfx@hh@@QEAAXAEBUGOCVisualModelDescription@23@@Z:
+    mov rax, 0140665a90h
+    jmp rax
+
+PUBLIC ?GetNodeIndex@GOCVisualModel@gfx@hh@@QEBAHPEBD@Z
+?GetNodeIndex@GOCVisualModel@gfx@hh@@QEBAHPEBD@Z:
+    mov rax, 0140665d10h
     jmp rax
 
 PUBLIC ?OnGOCEvent@GOCVisualModel@gfx@hh@@UEAAXW4GOCEvent@GOComponent@game@3@AEAVGameObject@63@PEAX@Z
@@ -20133,6 +20808,26 @@ PUBLIC ?GetRuntimeTypeInfo@GOCVisualModel@gfx@hh@@UEBAPEAXXZ
 PUBLIC ?GetClass@GOCVisualTransformed@gfx@hh@@SAPEBVGOComponentClass@game@3@XZ
 ?GetClass@GOCVisualTransformed@gfx@hh@@SAPEBVGOComponentClass@game@3@XZ:
     mov rax, 0140668070h
+    jmp rax
+
+PUBLIC ?Setup@GOCVisualTransformed@gfx@hh@@QEAAXAEBUSetupInfo@123@@Z
+?Setup@GOCVisualTransformed@gfx@hh@@QEAAXAEBUSetupInfo@123@@Z:
+    mov rax, 0140668080h
+    jmp rax
+
+PUBLIC ?SetLocalTranslation@GOCVisualTransformed@gfx@hh@@QEAAXAEBVVector3@math@csl@@@Z
+?SetLocalTranslation@GOCVisualTransformed@gfx@hh@@QEAAXAEBVVector3@math@csl@@@Z:
+    mov rax, 01406680c0h
+    jmp rax
+
+PUBLIC ?SetLocalRotation@GOCVisualTransformed@gfx@hh@@QEAAXAEBVQuaternion@math@csl@@@Z
+?SetLocalRotation@GOCVisualTransformed@gfx@hh@@QEAAXAEBVQuaternion@math@csl@@@Z:
+    mov rax, 0140668100h
+    jmp rax
+
+PUBLIC ?SetLocalScale@GOCVisualTransformed@gfx@hh@@QEAAXAEBVVector3@math@csl@@@Z
+?SetLocalScale@GOCVisualTransformed@gfx@hh@@QEAAXAEBVVector3@math@csl@@@Z:
+    mov rax, 01406681b0h
     jmp rax
 
 PUBLIC ??0GOCVisualTransformed@gfx@hh@@QEAA@XZ
@@ -21170,6 +21865,11 @@ PUBLIC ?GetRuntimeTypeInfo@GOCVisualDebugDraw@gfx@hh@@UEBAPEAXXZ
     mov rax, 0140682fd0h
     jmp rax
 
+PUBLIC ??0ModelNodeHFrame@gfx@hh@@QEAA@PEAVGOCVisualModel@12@PEBD@Z
+??0ModelNodeHFrame@gfx@hh@@QEAA@PEAVGOCVisualModel@12@PEBD@Z:
+    mov rax, 0140682fe0h
+    jmp rax
+
 PUBLIC ?Create@GOCPointLight@gfx@hh@@CAPEAV123@XZ
 ?Create@GOCPointLight@gfx@hh@@CAPEAV123@XZ:
     mov rax, 0140684d30h
@@ -21310,6 +22010,11 @@ PUBLIC ?NotifyDestroy@GameObject@game@hh@@QEAAXXZ
     mov rax, 01406b90c0h
     jmp rax
 
+PUBLIC ?Create@GameObject@game@hh@@SAPEAV123@PEBVGameObjectClass@23@@Z
+?Create@GameObject@game@hh@@SAPEAV123@PEBVGameObjectClass@23@@Z:
+    mov rax, 01406b9150h
+    jmp rax
+
 PUBLIC ??_DGameObject@game@hh@@QEAAXXZ
 ??_DGameObject@game@hh@@QEAAXXZ:
     mov rax, 01406b93c0h
@@ -21323,6 +22028,11 @@ PUBLIC ?GetGameObjectByHandle@GameObjectSystem@game@hh@@SAPEAVGameObject@23@AEBV
 PUBLIC ??1GOComponent@game@hh@@UEAA@XZ
 ??1GOComponent@game@hh@@UEAA@XZ:
     mov rax, 01406b9870h
+    jmp rax
+
+PUBLIC ?GetService@GOComponent@game@hh@@QEBAPEAVGameService@23@PEBVGameServiceClass@23@@Z
+?GetService@GOComponent@game@hh@@QEBAPEAVGameService@23@PEBVGameServiceClass@23@@Z:
+    mov rax, 01406b9a60h
     jmp rax
 
 PUBLIC ?GetClass@ObjInfoContainer@game@hh@@SAPEBVGameServiceClass@23@XZ
@@ -22120,6 +22830,11 @@ PUBLIC ?GetGameObjectClassByName@GameObjectRegistry@game@hh@@QEAAPEBVGameObjectC
     mov rax, 01406d5840h
     jmp rax
 
+PUBLIC ??0TransformManager@game@hh@@QEAA@XZ
+??0TransformManager@game@hh@@QEAA@XZ:
+    mov rax, 01406d58d0h
+    jmp rax
+
 PUBLIC ?GetAttributeValue@GameObjectClass@game@hh@@QEBAPEBXPEBD@Z
 ?GetAttributeValue@GameObjectClass@game@hh@@QEBAPEBXPEBD@Z:
     mov rax, 01406d5d50h
@@ -22263,6 +22978,16 @@ PUBLIC ?UnkFunc2@FrameworkWin32@fw@hh@@UEAA_KXZ
 PUBLIC ?UnkFunc13@FileLoader@fnd@hh@@UEAA_KPEBD_K@Z
 ?UnkFunc13@FileLoader@fnd@hh@@UEAA_KPEBD_K@Z:
     mov rax, 01406e5750h
+    jmp rax
+
+PUBLIC ??0SyncTimer@hh@@QEAA@XZ
+??0SyncTimer@hh@@QEAA@XZ:
+    mov rax, 01406e5ec0h
+    jmp rax
+
+PUBLIC ?SetFPS@SyncTimer@hh@@QEAAXM@Z
+?SetFPS@SyncTimer@hh@@QEAAXM@Z:
+    mov rax, 01406e5f90h
     jmp rax
 
 PUBLIC ??0GOCEffect@eff@hh@@QEAA@XZ
@@ -22878,6 +23603,21 @@ PUBLIC ?RemoveListener@HFrame@fnd@hh@@QEAAXPEAVListener@123@@Z
 PUBLIC ?SetFlag@HFrame@fnd@hh@@QEAAXW4Flag@123@_N@Z
 ?SetFlag@HFrame@fnd@hh@@QEAAXW4Flag@123@_N@Z:
     mov rax, 014073f410h
+    jmp rax
+
+PUBLIC ?MarkDirty@HFrame@fnd@hh@@QEAAXXZ
+?MarkDirty@HFrame@fnd@hh@@QEAAXXZ:
+    mov rax, 014073f440h
+    jmp rax
+
+PUBLIC ?MarkUpdate@HFrame@fnd@hh@@QEAAXXZ
+?MarkUpdate@HFrame@fnd@hh@@QEAAXXZ:
+    mov rax, 014073f490h
+    jmp rax
+
+PUBLIC ?CalculateTransform@HFrame@fnd@hh@@SA?AVTransform@math@csl@@AEBV456@0_N1@Z
+?CalculateTransform@HFrame@fnd@hh@@SA?AVTransform@math@csl@@AEBV456@0_N1@Z:
+    mov rax, 014073f740h
     jmp rax
 
 PUBLIC ?GetFamilyID@HFrame@fnd@hh@@UEAAXXZ
@@ -23513,6 +24253,16 @@ PUBLIC ??_DNeedleShaderListInfo@Impl@RenderingEngineNeedle@gfx@hh@@QEAAXXZ
 PUBLIC ?UnkFunc22@RenderingEngineNeedle@gfx@hh@@UEAAXXZ
 ?UnkFunc22@RenderingEngineNeedle@gfx@hh@@UEAAXXZ:
     mov rax, 0140800b40h
+    jmp rax
+
+PUBLIC ?GetResourceNames@SceneAnimationBase@scene@hh@@UEAAAEAV?$MoveArray@VVariableString@strings@ucsl@@@ut@csl@@XZ
+?GetResourceNames@SceneAnimationBase@scene@hh@@UEAAAEAV?$MoveArray@VVariableString@strings@ucsl@@@ut@csl@@XZ:
+    mov rax, 0140803a40h
+    jmp rax
+
+PUBLIC ?GetResourceNames@SceneAnimationBase@scene@hh@@UEAAPEAV?$MoveArray@VVariableString@strings@ucsl@@@ut@csl@@XZ
+?GetResourceNames@SceneAnimationBase@scene@hh@@UEAAPEAV?$MoveArray@VVariableString@strings@ucsl@@@ut@csl@@XZ:
+    mov rax, 0140803a40h
     jmp rax
 
 PUBLIC ?GetCallAllocateTime@PoolHeapBase@fnd@csl@@UEBAIXZ
@@ -25310,6 +26060,11 @@ PUBLIC ?Set@Obb@geom@csl@@QEAAXAEBVVector3@math@3@0AEBVQuaternion@53@@Z
     mov rax, 0140875850h
     jmp rax
 
+PUBLIC ?Sample@Tick@fnd@csl@@QEAAXXZ
+?Sample@Tick@fnd@csl@@QEAAXXZ:
+    mov rax, 01408765e0h
+    jmp rax
+
 PUBLIC ?ProjectOnNormal@Plane@math@csl@@QEBA?AVVector3@23@AEBV423@PEAM@Z
 ?ProjectOnNormal@Plane@math@csl@@QEBA?AVVector3@23@AEBV423@PEAM@Z:
     mov rax, 0140877e00h
@@ -26335,6 +27090,61 @@ PUBLIC ?OnRender@Component@gindows@@UEAAXXZ
     mov rax, 0140c25064h
     jmp rax
 
+PUBLIC ?GetResource@SceneBuilder@scene@hh@@UEAAPEAVManagedResource@fnd@3@PEBDPEBUResourceTypeInfo@53@@Z
+?GetResource@SceneBuilder@scene@hh@@UEAAPEAVManagedResource@fnd@3@PEBDPEBUResourceTypeInfo@53@@Z:
+    mov rax, 0140c25064h
+    jmp rax
+
+PUBLIC ?UnkFunc0@SceneAnimation@scene@hh@@UEAAXXZ
+?UnkFunc0@SceneAnimation@scene@hh@@UEAAXXZ:
+    mov rax, 0140c25064h
+    jmp rax
+
+PUBLIC ?UnkFunc1@SceneAnimation@scene@hh@@UEAAPEAVVariableString@strings@ucsl@@XZ
+?UnkFunc1@SceneAnimation@scene@hh@@UEAAPEAVVariableString@strings@ucsl@@XZ:
+    mov rax, 0140c25064h
+    jmp rax
+
+PUBLIC ?UnkFunc2@SceneAnimation@scene@hh@@UEAA_NPEBD@Z
+?UnkFunc2@SceneAnimation@scene@hh@@UEAA_NPEBD@Z:
+    mov rax, 0140c25064h
+    jmp rax
+
+PUBLIC ?UnkFunc3@SceneAnimation@scene@hh@@UEAA_ND@Z
+?UnkFunc3@SceneAnimation@scene@hh@@UEAA_ND@Z:
+    mov rax, 0140c25064h
+    jmp rax
+
+PUBLIC ?UnkFunc4@SceneAnimation@scene@hh@@UEAA_NMH@Z
+?UnkFunc4@SceneAnimation@scene@hh@@UEAA_NMH@Z:
+    mov rax, 0140c25064h
+    jmp rax
+
+PUBLIC ?UnkFunc5@SceneAnimation@scene@hh@@UEAA_NXZ
+?UnkFunc5@SceneAnimation@scene@hh@@UEAA_NXZ:
+    mov rax, 0140c25064h
+    jmp rax
+
+PUBLIC ?GetResourceNameCount@SceneAnimation@scene@hh@@UEAAHXZ
+?GetResourceNameCount@SceneAnimation@scene@hh@@UEAAHXZ:
+    mov rax, 0140c25064h
+    jmp rax
+
+PUBLIC ?SetSpeed@SceneAnimation@scene@hh@@UEAA_NM@Z
+?SetSpeed@SceneAnimation@scene@hh@@UEAA_NM@Z:
+    mov rax, 0140c25064h
+    jmp rax
+
+PUBLIC ?GetName@CameraController@camera@app_cmn@@UEBAPEBDXZ
+?GetName@CameraController@camera@app_cmn@@UEBAPEBDXZ:
+    mov rax, 0140c25064h
+    jmp rax
+
+PUBLIC ?UnkFunc5@SceneAnimation@scene@hh@@UEAA_N_JH@Z
+?UnkFunc5@SceneAnimation@scene@hh@@UEAA_N_JH@Z:
+    mov rax, 0140c25064h
+    jmp rax
+
 PUBLIC ?rflClassMembers@SwayParamIndivisual@rfl@heur@@0QBVRflClassMember@fnd@hh@@B
 ?rflClassMembers@SwayParamIndivisual@rfl@heur@@0QBVRflClassMember@fnd@hh@@B:
     mov rax, 0140d4c400h
@@ -26393,6 +27203,16 @@ PUBLIC ?typeInfo@ResAtomCueSheet@snd@hh@@0UResourceTypeInfo@fnd@3@B
 PUBLIC ?typeInfo@ResAtomConfig@snd@hh@@0UResourceTypeInfo@fnd@3@B
 ?typeInfo@ResAtomConfig@snd@hh@@0UResourceTypeInfo@fnd@3@B:
     mov rax, 0140d601d8h
+    jmp rax
+
+PUBLIC ?typeInfo@ResScene@scene@hh@@0UResourceTypeInfo@fnd@3@B
+?typeInfo@ResScene@scene@hh@@0UResourceTypeInfo@fnd@3@B:
+    mov rax, 0140d613e0h
+    jmp rax
+
+PUBLIC ?sceneAnimationCreateFuncs@scene@hh@@3PAP6APEAVSceneAnimation@12@AEAUSceneAnimationDescription@12@@ZA
+?sceneAnimationCreateFuncs@scene@hh@@3PAP6APEAVSceneAnimation@12@AEAUSceneAnimationDescription@12@@ZA:
+    mov rax, 0140d63100h
     jmp rax
 
 PUBLIC ?rflClassEnums@FxRenderOption@hh@@0QBVRflClassEnum@fnd@2@B
@@ -31473,6 +32293,21 @@ PUBLIC ?rflClassMembers@DecoGradationParam@rfl@heur@@0QBVRflClassMember@fnd@hh@@
 PUBLIC ?rflClassMembers@DecoTechParam@rfl@heur@@0QBVRflClassMember@fnd@hh@@B
 ?rflClassMembers@DecoTechParam@rfl@heur@@0QBVRflClassMember@fnd@hh@@B:
     mov rax, 0141f826e0h
+    jmp rax
+
+PUBLIC ?staticGameObjectClass@NullSceneObject@scene@hh@@0VGameObjectClass@game@3@B
+?staticGameObjectClass@NullSceneObject@scene@hh@@0VGameObjectClass@game@3@B:
+    mov rax, 0141f82f70h
+    jmp rax
+
+PUBLIC ?staticGameObjectClass@ModelSceneObject@scene@hh@@0VGameObjectClass@game@3@B
+?staticGameObjectClass@ModelSceneObject@scene@hh@@0VGameObjectClass@game@3@B:
+    mov rax, 0141f82fd0h
+    jmp rax
+
+PUBLIC ?staticGameObjectClass@EffectSceneObject@scene@hh@@0VGameObjectClass@game@3@B
+?staticGameObjectClass@EffectSceneObject@scene@hh@@0VGameObjectClass@game@3@B:
+    mov rax, 0141f83030h
     jmp rax
 
 PUBLIC ?typeInfo@FxBloomParameter@hh@@2VRflTypeInfo@fnd@2@B
@@ -40230,6 +41065,11 @@ PUBLIC ?componentClass@PathComponent@path@hh@@0VGOComponentClass@game@3@B
     mov rax, 014206eb48h
     jmp rax
 
+PUBLIC ?componentClass@GOCVisualModel@gfx@hh@@0VGOComponentClass@game@3@B
+?componentClass@GOCVisualModel@gfx@hh@@0VGOComponentClass@game@3@B:
+    mov rax, 014206f0b8h
+    jmp rax
+
 PUBLIC ?componentClass@GOCVisualTransformed@gfx@hh@@0VGOComponentClass@game@3@B
 ?componentClass@GOCVisualTransformed@gfx@hh@@0VGOComponentClass@game@3@B:
     mov rax, 014206f0f0h
@@ -40383,6 +41223,11 @@ PUBLIC ?gameServiceClass@BackgroundVisualUpdater@gfx@hh@@0VGameServiceClass@game
 PUBLIC ?componentClass@GOCVisualDebugDraw@gfx@hh@@0VGOComponentClass@game@3@B
 ?componentClass@GOCVisualDebugDraw@gfx@hh@@0VGOComponentClass@game@3@B:
     mov rax, 01420705c0h
+    jmp rax
+
+PUBLIC ?instance@?$Singleton@VTransformManager@game@hh@@@fnd@csl@@2PEAVTransformManager@game@hh@@EA
+?instance@?$Singleton@VTransformManager@game@hh@@@fnd@csl@@2PEAVTransformManager@game@hh@@EA:
+    mov rax, 01420706a8h
     jmp rax
 
 PUBLIC ?instance@?$Singleton@VRflTypeInfoRegistry@fnd@hh@@@fnd@csl@@2PEAVRflTypeInfoRegistry@2hh@@EA
@@ -44390,6 +45235,11 @@ PUBLIC ?gameServiceClass@MySceneManagerListener@scene@app@@0VGameServiceClass@ga
     mov rax, 014240d460h
     jmp rax
 
+PUBLIC ?componentClass@GOCScene@scene@app@@0VGOComponentClass@game@hh@@B
+?componentClass@GOCScene@scene@app@@0VGOComponentClass@game@hh@@B:
+    mov rax, 014240d478h
+    jmp rax
+
 PUBLIC ?gameServiceClass@SosManager@services@heur@@0VGameServiceClass@game@hh@@B
 ?gameServiceClass@SosManager@services@heur@@0VGameServiceClass@game@hh@@B:
     mov rax, 014240d4b0h
@@ -44795,6 +45645,11 @@ PUBLIC ?instance@?$HandleManager@VGOComponent@game@hh@@@fnd@hh@@2PEAV123@EA
     mov rax, 014240e808h
     jmp rax
 
+PUBLIC ?instance@?$Singleton@VSyncTimer@hh@@@fnd@csl@@2PEAVSyncTimer@hh@@EA
+?instance@?$Singleton@VSyncTimer@hh@@@fnd@csl@@2PEAVSyncTimer@hh@@EA:
+    mov rax, 014240e818h
+    jmp rax
+
 PUBLIC ?instance@?$Singleton@VFileLoader@fnd@hh@@@fnd@csl@@2PEAVFileLoader@2hh@@EA
 ?instance@?$Singleton@VFileLoader@fnd@hh@@@fnd@csl@@2PEAVFileLoader@2hh@@EA:
     mov rax, 014240e820h
@@ -44858,6 +45713,11 @@ PUBLIC ?GameServiceAddedCallback@CameraService@camera@app@@UEAAXPEAVGameService@
 PUBLIC ?GameServiceRemovedCallback@CameraService@camera@app@@UEAAXPEAVGameService@game@hh@@@Z
 ?GameServiceRemovedCallback@CameraService@camera@app@@UEAAXPEAVGameService@game@hh@@@Z:
     mov rax, 014287f430h
+    jmp rax
+
+PUBLIC ??_DSceneCamera@camera@app@@QEAAXXZ
+??_DSceneCamera@camera@app@@QEAAXXZ:
+    mov rax, 0142918840h
     jmp rax
 
 PUBLIC ??_DCameraExtension@camera@app_cmn@@QEAAXXZ
@@ -45315,6 +46175,16 @@ PUBLIC ??_DGOCPlayerParameter@player@app@@QEAAXXZ
     mov rax, 0143c86ae0h
     jmp rax
 
+PUBLIC ??_DSceneBuilder@scene@hh@@QEAAXXZ
+??_DSceneBuilder@scene@hh@@QEAAXXZ:
+    mov rax, 01443d0870h
+    jmp rax
+
+PUBLIC ??_DMySceneBuilder@scene@app@@QEAAXXZ
+??_DMySceneBuilder@scene@app@@QEAAXXZ:
+    mov rax, 01443d23f0h
+    jmp rax
+
 PUBLIC ?GameServiceAddedCallback@TerrainManager@trr@app@@UEAAXPEAVGameService@game@hh@@@Z
 ?GameServiceAddedCallback@TerrainManager@trr@app@@UEAAXPEAVGameService@game@hh@@@Z:
     mov rax, 01443defb0h
@@ -45473,6 +46343,261 @@ PUBLIC ?Unload@ResAtomCueSheet@snd@hh@@UEAAXXZ
 PUBLIC ??_DResAtomConfig@snd@hh@@QEAAXXZ
 ??_DResAtomConfig@snd@hh@@QEAAXXZ:
     mov rax, 0144a93070h
+    jmp rax
+
+PUBLIC ?PreStepCallback@SceneManager@scene@hh@@UEAAXPEAVGameManager@game@3@AEBUGameStepInfo@53@@Z
+?PreStepCallback@SceneManager@scene@hh@@UEAAXPEAVGameManager@game@3@AEBUGameStepInfo@53@@Z:
+    mov rax, 0144b347c0h
+    jmp rax
+
+PUBLIC ?Unload@ResScene@scene@hh@@UEAAXXZ
+?Unload@ResScene@scene@hh@@UEAAXXZ:
+    mov rax, 0144b417d0h
+    jmp rax
+
+PUBLIC ??_DResScene@scene@hh@@QEAAXXZ
+??_DResScene@scene@hh@@QEAAXXZ:
+    mov rax, 0144b43120h
+    jmp rax
+
+PUBLIC ?SNB_UnkFunc0@SceneControl@scene@hh@@UEAA_J_J@Z
+?SNB_UnkFunc0@SceneControl@scene@hh@@UEAA_J_J@Z:
+    mov rax, 0144b442d0h
+    jmp rax
+
+PUBLIC ?SNB_UnkFunc0@SceneControl@scene@hh@@UEAA_JPEAVSceneNode@23@@Z
+?SNB_UnkFunc0@SceneControl@scene@hh@@UEAA_JPEAVSceneNode@23@@Z:
+    mov rax, 0144b442d0h
+    jmp rax
+
+PUBLIC ?SNB_UnkFunc2@SceneControl@scene@hh@@UEAA_J_J@Z
+?SNB_UnkFunc2@SceneControl@scene@hh@@UEAA_J_J@Z:
+    mov rax, 0144b45fe0h
+    jmp rax
+
+PUBLIC ?SNB_UnkFunc3@SceneControl@scene@hh@@UEAA_J_J@Z
+?SNB_UnkFunc3@SceneControl@scene@hh@@UEAA_J_J@Z:
+    mov rax, 0144b47ac0h
+    jmp rax
+
+PUBLIC ?SNB_UnkFunc3@SceneControl@scene@hh@@UEAA_JPEAVSceneNode@23@@Z
+?SNB_UnkFunc3@SceneControl@scene@hh@@UEAA_JPEAVSceneNode@23@@Z:
+    mov rax, 0144b47ac0h
+    jmp rax
+
+PUBLIC ?SNB_UnkFunc4@SceneControl@scene@hh@@UEAA_J_JHH@Z
+?SNB_UnkFunc4@SceneControl@scene@hh@@UEAA_J_JHH@Z:
+    mov rax, 0144b49530h
+    jmp rax
+
+PUBLIC ?SNB_UnkFunc5@SceneControl@scene@hh@@UEAA_J_J0@Z
+?SNB_UnkFunc5@SceneControl@scene@hh@@UEAA_J_J0@Z:
+    mov rax, 0144b4bbd0h
+    jmp rax
+
+PUBLIC ?SNB_UnkFunc6@SceneControl@scene@hh@@UEAA_J_JH@Z
+?SNB_UnkFunc6@SceneControl@scene@hh@@UEAA_J_JH@Z:
+    mov rax, 0144b4d310h
+    jmp rax
+
+PUBLIC ??_DLightSceneNode@scene@hh@@QEAAXXZ
+??_DLightSceneNode@scene@hh@@QEAAXXZ:
+    mov rax, 0144b58fd0h
+    jmp rax
+
+PUBLIC ??_DObjectInfoImpl@scene@hh@@QEAAXXZ
+??_DObjectInfoImpl@scene@hh@@QEAAXXZ:
+    mov rax, 0144b5b3f0h
+    jmp rax
+
+PUBLIC ?GetTransform@ObjectInfoImpl@scene@hh@@UEAA?AVTransform@math@csl@@PEAUSceneData@v106@2resources@ucsl@@@Z
+?GetTransform@ObjectInfoImpl@scene@hh@@UEAA?AVTransform@math@csl@@PEAUSceneData@v106@2resources@ucsl@@@Z:
+    mov rax, 0144b5c6c0h
+    jmp rax
+
+PUBLIC ?CreateExternal@SceneBuilder@scene@hh@@UEAA_NPEAVSceneControl@23@AEBUCreateDescription@123@@Z
+?CreateExternal@SceneBuilder@scene@hh@@UEAA_NPEAVSceneControl@23@AEBUCreateDescription@123@@Z:
+    mov rax, 0144b88020h
+    jmp rax
+
+PUBLIC ?CreateModel@SceneBuilder@scene@hh@@UEAA_NPEAVSceneControl@23@AEBUCreateDescription@123@@Z
+?CreateModel@SceneBuilder@scene@hh@@UEAA_NPEAVSceneControl@23@AEBUCreateDescription@123@@Z:
+    mov rax, 0144b88f70h
+    jmp rax
+
+PUBLIC ?CreateEffect@SceneBuilder@scene@hh@@UEAA_NPEAVSceneControl@23@AEBUCreateDescription@123@@Z
+?CreateEffect@SceneBuilder@scene@hh@@UEAA_NPEAVSceneControl@23@AEBUCreateDescription@123@@Z:
+    mov rax, 0144ba2840h
+    jmp rax
+
+PUBLIC ??_DModelAnimation@scene@hh@@QEAAXXZ
+??_DModelAnimation@scene@hh@@QEAAXXZ:
+    mov rax, 0144c3dc20h
+    jmp rax
+
+PUBLIC ??_DPropertyAnimation@scene@hh@@QEAAXXZ
+??_DPropertyAnimation@scene@hh@@QEAAXXZ:
+    mov rax, 0144c428b0h
+    jmp rax
+
+PUBLIC ??_DSceneAnimation@scene@hh@@QEAAXXZ
+??_DSceneAnimation@scene@hh@@QEAAXXZ:
+    mov rax, 0144c43c80h
+    jmp rax
+
+PUBLIC ??_DSceneAnimationBase@scene@hh@@QEAAXXZ
+??_DSceneAnimationBase@scene@hh@@QEAAXXZ:
+    mov rax, 0144c45430h
+    jmp rax
+
+PUBLIC ??_DSkeletalModelAnimationAnimator@scene@hh@@QEAAXXZ
+??_DSkeletalModelAnimationAnimator@scene@hh@@QEAAXXZ:
+    mov rax, 0144c468a0h
+    jmp rax
+
+PUBLIC ?UnkFunc0@PropertyAnimation@scene@hh@@UEAAXXZ
+?UnkFunc0@PropertyAnimation@scene@hh@@UEAAXXZ:
+    mov rax, 0144c524f0h
+    jmp rax
+
+PUBLIC ?UnkFunc0@SkeletalModelAnimationAnimator@scene@hh@@UEAAXXZ
+?UnkFunc0@SkeletalModelAnimationAnimator@scene@hh@@UEAAXXZ:
+    mov rax, 0144c54630h
+    jmp rax
+
+PUBLIC ?UnkFunc20@SkeletalModelAnimationAnimator@scene@hh@@UEAA_NXZ
+?UnkFunc20@SkeletalModelAnimationAnimator@scene@hh@@UEAA_NXZ:
+    mov rax, 0144c62310h
+    jmp rax
+
+PUBLIC ?GetDeltaMotion@SkeletalModelAnimationAnimator@scene@hh@@UEAA_NAEAVTransform@math@csl@@@Z
+?GetDeltaMotion@SkeletalModelAnimationAnimator@scene@hh@@UEAA_NAEAVTransform@math@csl@@@Z:
+    mov rax, 0144c62310h
+    jmp rax
+
+PUBLIC ?UnkFunc11@PropertyAnimation@scene@hh@@UEAAXXZ
+?UnkFunc11@PropertyAnimation@scene@hh@@UEAAXXZ:
+    mov rax, 0144c6ed00h
+    jmp rax
+
+PUBLIC ?UnkFunc12@SkeletalModelAnimationAnimator@scene@hh@@UEAAXXZ
+?UnkFunc12@SkeletalModelAnimationAnimator@scene@hh@@UEAAXXZ:
+    mov rax, 0144c70080h
+    jmp rax
+
+PUBLIC ?UpdateDeltaMotion@SkeletalModelAnimationAnimator@scene@hh@@UEAAXXZ
+?UpdateDeltaMotion@SkeletalModelAnimationAnimator@scene@hh@@UEAAXXZ:
+    mov rax, 0144c70080h
+    jmp rax
+
+PUBLIC ?UnkFunc3@SkeletalModelAnimationAnimator@scene@hh@@UEAA_ND@Z
+?UnkFunc3@SkeletalModelAnimationAnimator@scene@hh@@UEAA_ND@Z:
+    mov rax, 0144c78640h
+    jmp rax
+
+PUBLIC ?UnkFunc2@SkeletalModelAnimationAnimator@scene@hh@@UEAA_NPEBD@Z
+?UnkFunc2@SkeletalModelAnimationAnimator@scene@hh@@UEAA_NPEBD@Z:
+    mov rax, 0144c7d750h
+    jmp rax
+
+PUBLIC ?UnkFunc19@SkeletalModelAnimationAnimator@scene@hh@@UEAAXXZ
+?UnkFunc19@SkeletalModelAnimationAnimator@scene@hh@@UEAAXXZ:
+    mov rax, 0144c822f0h
+    jmp rax
+
+PUBLIC ?UnkFunc4@PropertyAnimation@scene@hh@@UEAA_NMH@Z
+?UnkFunc4@PropertyAnimation@scene@hh@@UEAA_NMH@Z:
+    mov rax, 0144c8fc20h
+    jmp rax
+
+PUBLIC ?UnkFunc5@PropertyAnimation@scene@hh@@UEAA_N_JH@Z
+?UnkFunc5@PropertyAnimation@scene@hh@@UEAA_N_JH@Z:
+    mov rax, 0144c96700h
+    jmp rax
+
+PUBLIC ?UnkFunc5@SkeletalModelAnimationAnimator@scene@hh@@UEAA_NXZ
+?UnkFunc5@SkeletalModelAnimationAnimator@scene@hh@@UEAA_NXZ:
+    mov rax, 0144c97b80h
+    jmp rax
+
+PUBLIC ?UnkFunc5@SkeletalModelAnimationAnimator@scene@hh@@UEAA_N_JH@Z
+?UnkFunc5@SkeletalModelAnimationAnimator@scene@hh@@UEAA_N_JH@Z:
+    mov rax, 0144c97b80h
+    jmp rax
+
+PUBLIC ?AddCallback@ModelSceneObject@scene@hh@@UEAAXPEAVGameManager@game@3@@Z
+?AddCallback@ModelSceneObject@scene@hh@@UEAAXPEAVGameManager@game@3@@Z:
+    mov rax, 0144c9b560h
+    jmp rax
+
+PUBLIC ?AddCallback@EffectSceneObject@scene@hh@@UEAAXPEAVGameManager@game@3@@Z
+?AddCallback@EffectSceneObject@scene@hh@@UEAAXPEAVGameManager@game@3@@Z:
+    mov rax, 0144c9f600h
+    jmp rax
+
+PUBLIC ?GetHFrame@SceneNode@scene@hh@@UEAAPEAVHFrame@fnd@3@XZ
+?GetHFrame@SceneNode@scene@hh@@UEAAPEAVHFrame@fnd@3@XZ:
+    mov rax, 0144ca2960h
+    jmp rax
+
+PUBLIC ?Destroy@ModelSceneNode@scene@hh@@UEAAXXZ
+?Destroy@ModelSceneNode@scene@hh@@UEAAXXZ:
+    mov rax, 0144ca5ce0h
+    jmp rax
+
+PUBLIC ?SetTransform@ModelSceneNode@scene@hh@@UEAAXAEBVTransform@math@csl@@@Z
+?SetTransform@ModelSceneNode@scene@hh@@UEAAXAEBVTransform@math@csl@@@Z:
+    mov rax, 0144ca7930h
+    jmp rax
+
+PUBLIC ?GetHFrame@ModelSceneNode@scene@hh@@UEAAPEAVHFrame@fnd@3@XZ
+?GetHFrame@ModelSceneNode@scene@hh@@UEAAPEAVHFrame@fnd@3@XZ:
+    mov rax, 0144ca8e50h
+    jmp rax
+
+PUBLIC ?Destroy@EffectSceneNode@scene@hh@@UEAAXXZ
+?Destroy@EffectSceneNode@scene@hh@@UEAAXXZ:
+    mov rax, 0144cab510h
+    jmp rax
+
+PUBLIC ?SetTransform@EffectSceneNode@scene@hh@@UEAAXAEBVTransform@math@csl@@@Z
+?SetTransform@EffectSceneNode@scene@hh@@UEAAXAEBVTransform@math@csl@@@Z:
+    mov rax, 0144cacdc0h
+    jmp rax
+
+PUBLIC ??_DEffectSceneNode@scene@hh@@QEAAXXZ
+??_DEffectSceneNode@scene@hh@@QEAAXXZ:
+    mov rax, 0144cadc90h
+    jmp rax
+
+PUBLIC ??_DModelSceneNode@scene@hh@@QEAAXXZ
+??_DModelSceneNode@scene@hh@@QEAAXXZ:
+    mov rax, 0144caeb60h
+    jmp rax
+
+PUBLIC ??_DSceneNode@scene@hh@@QEAAXXZ
+??_DSceneNode@scene@hh@@QEAAXXZ:
+    mov rax, 0144cafe80h
+    jmp rax
+
+PUBLIC ??_DNullSceneNode@scene@hh@@QEAAXXZ
+??_DNullSceneNode@scene@hh@@QEAAXXZ:
+    mov rax, 0144cafe80h
+    jmp rax
+
+PUBLIC ??_DTerrainSceneNode@scene@hh@@QEAAXXZ
+??_DTerrainSceneNode@scene@hh@@QEAAXXZ:
+    mov rax, 0144cb1b30h
+    jmp rax
+
+PUBLIC ?SetParameters@HermiteCurveEvaluator@scene@hh@@UEAA_NPEAUCurveData@TrackNode@v106@2resources@ucsl@@@Z
+?SetParameters@HermiteCurveEvaluator@scene@hh@@UEAA_NPEAUCurveData@TrackNode@v106@2resources@ucsl@@@Z:
+    mov rax, 0144dc0330h
+    jmp rax
+
+PUBLIC ?SetParameters@LinearCurveEvaluator@scene@hh@@UEAA_NPEAUCurveData@TrackNode@v106@2resources@ucsl@@@Z
+?SetParameters@LinearCurveEvaluator@scene@hh@@UEAA_NPEAUCurveData@TrackNode@v106@2resources@ucsl@@@Z:
+    mov rax, 0144dc3f00h
     jmp rax
 
 PUBLIC ??_DApplicationListener@fw@hh@@QEAAXXZ
@@ -45985,6 +47110,11 @@ PUBLIC ??_DInternalCameraStack@game@hh@@QEAAXXZ
     mov rax, 014555c8c0h
     jmp rax
 
+PUBLIC ??_DTransformManager@game@hh@@QEAAXXZ
+??_DTransformManager@game@hh@@QEAAXXZ:
+    mov rax, 0145572cb0h
+    jmp rax
+
 PUBLIC ??_DGameManagerOperationQueue@game@hh@@QEAAXXZ
 ??_DGameManagerOperationQueue@game@hh@@QEAAXXZ:
     mov rax, 014557bc30h
@@ -46043,6 +47173,11 @@ PUBLIC ?UnkFunc5@FrameworkWin32@fw@hh@@UEAA_KXZ
 PUBLIC ??_DBaseFramework@fw@hh@@QEAAXXZ
 ??_DBaseFramework@fw@hh@@QEAAXXZ:
     mov rax, 0145620c10h
+    jmp rax
+
+PUBLIC ??_DSyncTimer@hh@@QEAAXXZ
+??_DSyncTimer@hh@@QEAAXXZ:
+    mov rax, 0145627bc0h
     jmp rax
 
 PUBLIC ??_DEventStack@fw@hh@@QEAAXXZ
