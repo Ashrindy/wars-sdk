@@ -1,5 +1,6 @@
 #define EXPORTING_TYPES
 #define RESOLVE_STATIC_VARIABLE(x) x
+#define _ALLOW_COMPILER_AND_STL_VERSION_MISMATCH
 
 #include "wars-api/wars-api/wars-api.h"
 

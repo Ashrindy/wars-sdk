@@ -59,6 +59,7 @@ namespace warssdk::ucsl {
 #include "cslib/csl/ut/String.h"
 #include "cslib/csl/ut/VariableString.h"
 #include "cslib/csl/ut/Enum.h"
+#include "cslib/csl/ut/Point.h"
 
 #include "cslib/csl/fnd/Singleton.h"
 #include "cslib/csl/fnd/Mutex.h"
@@ -70,6 +71,19 @@ namespace warssdk::ucsl {
 #include "cslib/csl/fnd/PoolHeap.h"
 #include "cslib/csl/fnd/ExternalHeap.h"
 #include "cslib/csl/fnd/Delegate.h"
+#include "cslib/csl/fnd/Tick.h"
+#include "cslib/csl/fnd/ThreadSleep.h"
+#include "cslib/csl/fnd/Thread.h"
+
+#include "Gindows/Object.h"
+#include "Gindows/Component.h"
+#include "Gindows/String.h"
+#include "Gindows/Canvas.h"
+#include "Gindows/Screen.h"
+#include "Gindows/Control.h"
+#include "Gindows/ToolTip.h"
+#include "Gindows/Desktop.h"
+#include "Gindows/Manager.h"
 
 #include "Hedgehog/Rsdx/hhMTSimpleJobJoint.h"
 #include "Hedgehog/Rsdx/hhmtjobdispatchfunctions.h"
@@ -270,6 +284,7 @@ namespace warssdk::ucsl {
 #include "Hedgehog/Framework/Framework.h"
 #include "Hedgehog/Framework/AppModule.h"
 #include "Hedgehog/Framework/Application.h"
+#include "Hedgehog/Framework/SyncTimer.h"
 
 // HID
 #include "Hedgehog/HID/InputDevice.h"
@@ -290,6 +305,8 @@ namespace warssdk::ucsl {
 
 #include "Hedgehog/HID/DeviceManager.h"
 #include "Hedgehog/HID/DeviceManagerWin32.h"
+
+#include "Hedgehog/User/UserService.h"
 
 #include "Hedgehog/Game/GameService.h"
 #include "Hedgehog/Game/GOComponent.h"
@@ -320,6 +337,7 @@ namespace warssdk::ucsl {
 #include "Hedgehog/Game/ObjectWorldExtension.h"
 #include "Hedgehog/Game/ObjectWorld.h"
 #include "Hedgehog/Game/FreeCamera.h"
+#include "Hedgehog/Game/TransformManager.h"
 
 #include "Hedgehog/Game/GOComponents/GOCInput.h"
 #include "Hedgehog/Game/GOComponents/GOCTransform.h"
@@ -357,11 +375,17 @@ namespace warssdk::ucsl {
 #include "Hedgehog/Graphics/ResMirageLightField.h"
 #include "Hedgehog/Graphics/ResDecal.h"
 #include "Hedgehog/Graphics/ResProbe.h"
+#include "Hedgehog/Graphics/ModelNodeHFrame.h"
 
 #include "Hedgehog/Effect/ResEffect.h"
 
 #include "Hedgehog/Sound/ResAtomConfig.h"
 #include "Hedgehog/Sound/ResAtomCueSheet.h"
+#include "Hedgehog/Sound/SoundTween.h"
+#include "Hedgehog/Sound/SoundCue.h"
+#include "Hedgehog/Sound/SoundHandle.h"
+#include "Hedgehog/Sound/SoundSystem.h"
+#include "Hedgehog/Sound/SoundPlayer.h"
 
 #include "Hedgehog/Text/ResText.h"
 #include "Hedgehog/Text/ResTextMeta.h"
@@ -391,12 +415,15 @@ namespace warssdk::ucsl {
 #include "Hedgehog/Debug/Messages.h"
 
 #include "Hedgehog/Scene/ResScene.h"
+#include "Hedgehog/Scene/CurveEvaluator.h"
 #include "Hedgehog/Scene/SceneObject.h"
 #include "Hedgehog/Scene/SceneNode.h"
 #include "Hedgehog/Scene/ObjectInfo.h"
 #include "Hedgehog/Scene/SceneNodeBuilder.h"
-#include "Hedgehog/Scene/SceneAnimation.h"
 #include "Hedgehog/Scene/SceneBuilder.h"
+#include "Hedgehog/Scene/ControlNode.h"
+#include "Hedgehog/Scene/SceneAnimation.h"
+#include "Hedgehog/Scene/ModelAnimation.h"
 #include "Hedgehog/Scene/SceneControl.h"
 #include "Hedgehog/Scene/SceneManager.h"
 
@@ -483,9 +510,20 @@ namespace warssdk::ucsl {
 #include "Application/Camera/CameraBridge.h"
 #include "Application/Camera/CameraService.h"
 
+#include "Application/Scene/GOCScene.h"
+#include "Application/Scene/MySceneBuilder.h"
+#include "Application/Camera/SceneCamera.h"
+
 // #include "Application/VolumeTrigger.h"
 // #include "Application/ObjCamera.h"
 // #include "Application/ObjCameraVolume.h"
+
+#include "Application/User/UserManager.h"
+
+#include "Application/SaveData/SaveManager.h"
+
+#include "Application/UI/UIOptionToggleData.h"
+#include "Application/UI/UIAudioScreen.h"
 
 namespace warssdk::ucsl {
     inline csl::fnd::IAllocator* AllocatorSystem::get_allocator() { return hh::fnd::MemoryRouter::GetDebugAllocator(); }

@@ -30,7 +30,7 @@ namespace hh::fnd
 		Messenger();
 
 		virtual ~Messenger();
-		virtual bool ProcessMessage(Message& message) { return !fUnk3(); }
+		virtual bool ProcessMessage(Message& message);
 		virtual bool fUnk3() { return false; }
 		virtual bool ReceiveMessage(Message& message);
 		

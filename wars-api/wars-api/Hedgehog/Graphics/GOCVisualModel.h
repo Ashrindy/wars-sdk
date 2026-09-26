@@ -7,7 +7,7 @@ namespace hh::anim {
 namespace hh::gfx {
     // Actually called GOCVisualMode::Description but I'm not sure how to resolve the mutual dependency with Setup.
     // Assumed, some of these fields may not be part of this but of the GOCVisualModel instead
-    struct GOCVisualModelDescription {
+    struct GOCVisualModelDescription : public GOCVisualTransformed::SetupInfo {
         enum class Flag {
             SCENE_EDITOR_RENDER = 0x14,
             NO_CONTROL_RENDER_OPTION = 0x15,
@@ -21,16 +21,16 @@ namespace hh::gfx {
             IS_SHADOW_RECEIVE = 0x1D,
             IS_SHADOW_CASTER = 0x1E,
         };
-        uint64_t unk317;
-        uint16_t unk318;
-        uint64_t unk319;
+        fnd::ManagedResource* model;
         uint64_t unk320;
-        uint64_t skeletalAnimationRelatedUnk;
+        uint64_t unk321;
+        fnd::ManagedResource* skeleton;
         csl::ut::Bitset<Flag> flags;
         uint32_t unk322;
         int unk323;
-        uint64_t unk324;
-        fnd::ManagedResource* unk325;
+        int unk323b;
+        int unk324;
+        int unk325;
         fnd::ManagedResource* unk326;
         fnd::ManagedResource* unk327;
         bool isSky;
@@ -40,9 +40,13 @@ namespace hh::gfx {
         bool useGISG;
         uint32_t unk330;
         uint32_t useSkeletalAnimRelated;
-        uint16_t unk331;
+        uint32_t unk331;
+        char unk332;
+        unsigned int name;
+        unsigned int masterPoseComponentNameHash;
+        char unk333;
 
-        GOCVisualModelDescription(csl::fnd::IAllocator* allocator);
+        GOCVisualModelDescription();
     };
 
     class GOCVisualModel;
@@ -81,32 +85,35 @@ namespace hh::gfx {
     };
 
     class GOCVisualModel : public GOCVisualTransformed {
-        GOCVisualModelImpl* pImplementation;
-        GOCVisualModel* masterPoseComponent;
+        int64_t qword170;
+        int64_t qword178;
+        int64_t qword180;
+        int64_t qword188;
         csl::ut::InplaceMoveArray<GOCVisualModel*, 3> poseComponents;
-        uint32_t unk303;
-        fnd::ManagedResource* unk304;
-        uint64_t unk305;
-        uint64_t unk306;
-        uint64_t unk307;
-        uint64_t unk308;
-        uint64_t unk309;
-        uint64_t unk310;
-        uint32_t unk311;
-        uint8_t unk312;
-        uint64_t unk313;
-        uint64_t unk314;
-        fnd::Reference<anim::SkeletalMeshBinding> skeletalMeshBinding;
-        float unk316;
+        unsigned int masterPoseComponentNameHash;
+        fnd::Reference<fnd::ManagedResource> model;
+        fnd::Reference<fnd::ManagedResource> skeleton;
+        int64_t qword1E0;
+        int64_t qword1E8;
+        int64_t qword1F0;
+        int64_t qword1F8;
+        int64_t qword200;
+        int64_t qword208;
+        int64_t qword210;
+        int dword218;
         GOCVisualModelDescription description;
-        GOCVisualModelImpl implementation;
-        uint64_t unk332;
+        int64_t qword290;
+        char byte298[904];
+        int64_t qword620;
+        char byte628;
 
     public:
 		virtual void* GetRuntimeTypeInfo() const override;
 		virtual void OnGOCEvent(GOCEvent event, game::GameObject& ownerGameObject, void* data) override;
         virtual void OnGOCVisualEvent(GOCVisualEvent unkParam1, unsigned int unkParam2, void* unkParam3) override;
         void SetMasterPoseComponent(GOCVisualModel* component);
+        int GetNodeIndex(const char* nodeName) const;
+        void Setup(const GOCVisualModelDescription& description);
 
         GOCOMPONENT_CLASS_DECLARATION(GOCVisualModel)
     };

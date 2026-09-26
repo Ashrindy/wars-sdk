@@ -4,8 +4,9 @@ namespace hh::gfx {
     class GOCVisualTransformed : public GOCVisual, public fnd::HFrameListener {
     public:
         struct SetupInfo {
-            fnd::HFrame* frame;
-            uint8_t unk1;
+            fnd::HFrame* frame{};
+            bool visibilityEnabled{};
+            bool updatePostAnim{};
         };
 
         game::GOCTransform* gocTransform;
