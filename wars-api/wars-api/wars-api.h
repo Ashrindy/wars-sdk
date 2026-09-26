@@ -72,6 +72,8 @@ namespace warssdk::ucsl {
 #include "cslib/csl/fnd/ExternalHeap.h"
 #include "cslib/csl/fnd/Delegate.h"
 #include "cslib/csl/fnd/Tick.h"
+#include "cslib/csl/fnd/ThreadSleep.h"
+#include "cslib/csl/fnd/Thread.h"
 
 #include "Gindows/Object.h"
 #include "Gindows/Component.h"
@@ -304,6 +306,8 @@ namespace warssdk::ucsl {
 #include "Hedgehog/HID/DeviceManager.h"
 #include "Hedgehog/HID/DeviceManagerWin32.h"
 
+#include "Hedgehog/User/UserService.h"
+
 #include "Hedgehog/Game/GameService.h"
 #include "Hedgehog/Game/GOComponent.h"
 #include "Hedgehog/Game/GameObject.h"
@@ -377,6 +381,11 @@ namespace warssdk::ucsl {
 
 #include "Hedgehog/Sound/ResAtomConfig.h"
 #include "Hedgehog/Sound/ResAtomCueSheet.h"
+#include "Hedgehog/Sound/SoundTween.h"
+#include "Hedgehog/Sound/SoundCue.h"
+#include "Hedgehog/Sound/SoundHandle.h"
+#include "Hedgehog/Sound/SoundSystem.h"
+#include "Hedgehog/Sound/SoundPlayer.h"
 
 #include "Hedgehog/Text/ResText.h"
 #include "Hedgehog/Text/ResTextMeta.h"
@@ -508,6 +517,13 @@ namespace warssdk::ucsl {
 // #include "Application/VolumeTrigger.h"
 // #include "Application/ObjCamera.h"
 // #include "Application/ObjCameraVolume.h"
+
+#include "Application/User/UserManager.h"
+
+#include "Application/SaveData/SaveManager.h"
+
+#include "Application/UI/UIOptionToggleData.h"
+#include "Application/UI/UIAudioScreen.h"
 
 namespace warssdk::ucsl {
     inline csl::fnd::IAllocator* AllocatorSystem::get_allocator() { return hh::fnd::MemoryRouter::GetDebugAllocator(); }
